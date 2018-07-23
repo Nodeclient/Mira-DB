@@ -19,11 +19,11 @@
     */
 
             // INCLUDE MIRA
-            const jsql = require("jsql");
+            const jsql = require("mira-db");
             // SET YOUR USER PERMISSION
             var perms = { SELECT:true,ADD:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true }
             // YOUR STORAGE FOLDER FULL PATH
-            var My_Db_folder =  process.cwd() + "/data";
+            var My_Db_folder =  "c:/data";
             //SELECT DATABASE
             var My_Db_name = "test";
             // CREATE NEW DATABASE OBJECT
