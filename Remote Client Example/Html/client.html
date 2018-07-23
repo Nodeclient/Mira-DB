@@ -1,0 +1,47 @@
+<style>
+.noselect { 
+    -webkit-touch-callout: none;  
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;      
+    -ms-user-select: none;      
+    user-select: none;         
+}
+</style>
+
+<center>QUERY<br>
+<div id="contents" STYLE="font-family: Arial ; font-size: 15px; color: black" ></div>
+<textarea rows="4" cols="50" class="enter"  id="txkey">select table person</textarea>
+<br>OUTPUT<br><textarea rows="4" cols="50" class="enter"  id="txval">?</textarea><br><br>
+<div id="b_load" class="noselect" style="cursor:pointer;" >Sent Query</div>
+<div id="b_test" class="noselect" style="cursor:pointer;" >Connect Server</div></center>
+
+<script src="socket.io-1.4.5.js"></script>
+<script src="jquery.min.js"></script>
+<script src="miradb.client.1.0.0.js"></script>
+
+<script>
+$(document).ready(function() {
+    var db = new MiraDB("root","","127.0.0.1:8123","null");
+
+    $("#b_test").click(function(){ 
+        db.Connect();
+    });
+
+
+    $("#b_load").click(function(){
+        var getKey=document.getElementById("txkey").value;
+            db.Query(getKey, function(data) {
+                    document.getElementById("txval").value =     JSON.stringify(data);   
+            });		
+    });
+
+
+    $.Jalert = function(e)    { 
+        if (e.resume==false) document.getElementById("txval").value="Error Code : "+e.code+" - "+e.text;
+        if (e.resume==true) document.getElementById("txval").value= e.text;
+    };
+
+}); 
+</script>
+</body>
