@@ -11,6 +11,7 @@
         var object = {};
             object.query = str;
             object.id=User_ID;
+            object.db = "test";
             socket.emit("query",object);
             socket.on("QueryData", callback);
     }
