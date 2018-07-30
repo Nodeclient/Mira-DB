@@ -115,7 +115,7 @@
             });
 
 			
-			db.Jalert = function(e)    { 
+			db.Event = function(e)    { 
        			 if (e.resume==false) document.getElementById("txval").value="Error Code : "+e.code+" - "+e.text;
         		 if (e.resume==true) document.getElementById("txval").value= "SERVER:" + e.text;
 			};
