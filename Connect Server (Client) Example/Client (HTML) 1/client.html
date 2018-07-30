@@ -18,7 +18,7 @@
 
 <script src="socket.io-1.4.5.js"></script>
 <script src="jquery.min.js"></script>
-<script src="miradb.client.1.0.0.js"></script>
+<script src="miradb.client.1.0.1.js"></script>
 
 <script>
 $(document).ready(function() {
@@ -32,16 +32,16 @@ $(document).ready(function() {
     $("#b_load").click(function(){
         var getKey=document.getElementById("txkey").value;
             db.Query(getKey, function(data) {
-                    document.getElementById("txval").value =     JSON.stringify(data);   
+                    document.getElementById("txval").value = JSON.stringify(data);   
             });		
     });
 
-
-    $.Jalert = function(e)    { 
-        if (e.resume==false) document.getElementById("txval").value="Error Code : "+e.code+" - "+e.text;
-        if (e.resume==true) document.getElementById("txval").value= e.text;
-    };
-
+	
+	db.Event = function(e) { 
+      if (e.resume==false) document.getElementById("txval").value="Error Code : "+e.code+" - "+e.text;
+      if (e.resume==true) document.getElementById("txval").value= "SERVER:" + e.text;
+	};
+	
 }); 
 </script>
 </body>

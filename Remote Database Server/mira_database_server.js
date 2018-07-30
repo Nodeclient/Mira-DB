@@ -6,7 +6,7 @@ server = io.listen(8123);
 var UserData = new Map();     
 var UserPerm = new Map();  
 
-var Storage_Folder =  process.cwd() + "/data";
+var Storage_Folder =   "./data";
 var database = new DB(Storage_Folder,"UTF-8");
 
 server.on("connection", (socket) => {
@@ -21,21 +21,25 @@ server.on("connection", (socket) => {
     socket.emit("EventData",[connect_time,"CONNECTION_SUCCESS"]);
     
     socket.on("query", (data) => {
-        queryKey = UserData.get(data["id"]);
-        PermKey = UserPerm.get(data["id"])[0];
-        DBKey = UserPerm.get(data["id"])[1];
-        var PermsData = user.LoadPermsData(PermKey+".perm");
-    
-        if(queryKey){
-            var result;
-            if(DBKey=="*"){
-                result = database.Query(data["query"],data["db"],PermsData);
-            } else {
-                result = database.Query(data["query"],DBKey,PermsData);
-            }
-            socket.emit("QueryData",result);
+        if(data["id"]==0){
+           socket.disconnect();
         } else {
-            socket.emit("QueryData",[data,"LOGIN_ERROR","CANNOT ACCESS DATABASE"]);
+            queryKey = UserData.get(data["id"]);
+            PermKey = UserPerm.get(data["id"])[0];
+            DBKey = UserPerm.get(data["id"])[1];
+            var PermsData = user.LoadPermsData(PermKey+".perm");
+        
+            if(queryKey){
+                var result;
+                if(DBKey=="*"){
+                    result = database.Query(data["query"],data["db"],PermsData);
+                } else {
+                    result = database.Query(data["query"],DBKey,PermsData);
+                }
+                socket.emit("QueryData",result);
+            } else {
+                socket.emit("QueryData",[data,"LOGIN_ERROR","CANNOT ACCESS DATABASE"]);
+            }
         }
     });
 
