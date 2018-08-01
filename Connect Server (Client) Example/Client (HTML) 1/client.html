@@ -7,14 +7,24 @@
     -ms-user-select: none;      
     user-select: none;         
 }
+       .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+         }
 </style>
 
 <center>QUERY<br>
 <div id="contents" STYLE="font-family: Arial ; font-size: 15px; color: black" ></div>
 <textarea rows="4" cols="50" class="enter"  id="txkey">select table person</textarea>
 <br>OUTPUT<br><textarea rows="4" cols="50" class="enter"  id="txval">?</textarea><br><br>
-<div id="b_load" class="noselect" style="cursor:pointer;" >Sent Query</div>
-<div id="b_test" class="noselect" style="cursor:pointer;" >Connect Server</div></center>
+<div id="b_load" class="noselect button" style="cursor:pointer;" >Sent Query</div>
+<div id="b_test" class="noselect button" style="cursor:pointer;" >Connect Server</div></center>
 
 <script src="socket.io-1.4.5.js"></script>
 <script src="jquery.min.js"></script>
