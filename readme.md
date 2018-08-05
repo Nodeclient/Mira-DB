@@ -1,4 +1,4 @@
-# MIRADB
+# MIRADB Client 1.0.1
 [![N|Solid](https://miradbblog.files.wordpress.com/2018/08/untitled-11.jpg)](https://www.npmjs.com/package/mira-db)
 ## INSTALL
  -- https://www.npmjs.com/package/mira-db
