@@ -1,1 +1,1 @@
-{ "SELECT":true,"ADD":true,"RENAME":false,"DROP":false,"DELETE":true,"CREATE":true,"LIST":false }
+{ SELECT:true,ADD:true,UPDATE:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true }
