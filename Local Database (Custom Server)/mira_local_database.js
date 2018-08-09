@@ -21,15 +21,15 @@
     */
 
             // INCLUDE MIRA
-            const jsql = require("mira-db");
+            const mira = require("mira-db");
             // SET YOUR USER PERMISSION
             var perms = { SELECT:true,ADD:true,UPDATE:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true }
-            // YOUR STORAGE FOLDER FULL PATH
+            // YOUR STORAGE FOLDER FULL PATCH
             var My_Db_folder =  "c:/data";
             //SELECT DATABASE
             var My_Db_name = "test";
             // CREATE NEW DATABASE OBJECT
-            var mydb = new jsql(My_Db_folder,"UTF-8");
+            var mydb = new mira(My_Db_folder,"UTF-8");
             // SET QUERY
             var query = 'SELECT TABLE person';
             //DATA RESULT
