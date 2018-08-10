@@ -5,4 +5,3 @@
 ## INSTALL
  -- https://www.npmjs.com/package/mira-db
 ##
- -- Logo Lisance [freepik](https://www.freepik.com)
