@@ -62,15 +62,6 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
     console.log(  result );
 ```
 
-## Nodejs  >  remote_server.js
-
----------------------------------------------
-    npm install socket.io
-    npm install mira-db
----------------------------------------------
-
-[REMOTE SERVER](https://github.com/Nodeclient/Mira-DB/tree/master/Remote%20Database%20(socket.io%20Server))
-
 
 [![N|Solid](https://miradbblog.files.wordpress.com/2018/08/untitled-11.jpg)](https://www.npmjs.com/package/mira-db) 
 
