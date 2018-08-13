@@ -125,15 +125,6 @@ server.on("connection", (socket) => {
 });
 ```
 
-####Updates & Fixed
-+ Version 1.0.11
-    + "ADD,RENAME,DELETE,UPDATE,SELECT" command critical bugs fixed
-    + add advanced query error debug message
-    + data result even faster than before
-+ Version 1.0.10
-	+ Update and fixed "userdata"
-
-
 [![N|Solid](https://miradbblog.files.wordpress.com/2018/08/untitled-11.jpg)](https://www.npmjs.com/package/mira-db) 
 
 ## License
