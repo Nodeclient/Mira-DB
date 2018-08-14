@@ -1,4 +1,4 @@
-# Mira Database Server (1.0.11 stable version)
+# Mira Database Server (1.0.12 stable version)
 
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
@@ -57,9 +57,17 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
     var mydb = new mira(My_Db_folder,"UTF-8");
     // SET QUERY
     var query = 'SELECT TABLE person';
-    //DATA RESULT
+
+    
+    // RESULT METHOD (EXAMPLE) 1
     var result = mydb.Query(query,My_Db_name,perms);
     console.log(  result );
+    
+    // RESULT METHOD (EXAMPLE) 2
+    mydb.Query(query,My_Db_name,perms ,function(result){
+      console.log(  result );
+    });           
+    
 ```
 
 
