@@ -7,4 +7,12 @@
   your.perm > { "SELECT":true,"ADD":true,"UPDATE":false,"RENAME":true,"DROP":true,"DELETE":true,"CREATE":true,"LIST":false }
  
  
-## Add new user > user.conf ## 
+## Add new user ## 
+<USERNAME:PASSWORD:PERMISSION_FILE_NAME:DATABASE_NAME>
+save user.conf
+
+
+## EXAMPLE DATABASE ##
+
+Example database (you can delete)
+./data/test
