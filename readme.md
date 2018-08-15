@@ -1,4 +1,4 @@
-# Mira Database Server (1.0.12 stable version)
+# Mira Database Server
 
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
@@ -24,6 +24,7 @@ npm install mira-db --save
     SELECT TABLE <TABLE_NAME>; 
     SELECT TABLE <TABLE_NAME> COUNT; 
     SELECT TABLE <TABLE_NAME> COLUMN ["COL1"];
+    SELECT TABLE <TABLE_NAME> LIMIT ["0","10"];
     SELECT TABLE <TABLE_NAME> COLUMN ["COL1"] FIND ["SEARCH_STRING"]; 
     UPDATE ROW <TABLE_NAME> COLUMN ["COL1","COL2",..] VALUE ["VAL1","VAL2"] FIND ["COL1","SEARCH_STRING"];
     ADD ROW <TABLE_NAME> COLUMN ["COL1","COL2","COL3"] VALUE ["VAL1","VAL2","VAL3"]; 
