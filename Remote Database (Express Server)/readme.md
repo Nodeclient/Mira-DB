@@ -8,8 +8,7 @@
 
 ### INSTALL BODY PARSER
 ```	npm install body-parser ```
-	
-	
+		
 ### GET,POST URL
 ``` http://localhost:8123/query ```
 
@@ -24,5 +23,11 @@ Creat new html file > (test.html)
 <input type="text" name="query" placeholder="SELECT TABLE person"/></div>
 </form>
 <button id="btn">Send Data</button>
+
+```
+
+## YOUTUBE EXPRESS DB (example)
+```
+https://www.youtube.com/watch?v=5snf1J9pZak
 
 ```
