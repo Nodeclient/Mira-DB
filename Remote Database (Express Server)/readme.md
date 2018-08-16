@@ -1,15 +1,18 @@
 # MIRA-DB EXPRESS DATABASE (HTTP BASED)
 	
-## INSTALL MIRA ##
+### INSTALL MIRA
 ``` npm install mira-db ```
 
-## INSTALL EXPRESS ##
+### INSTALL EXPRESS
 ```	npm install express ```
 
-## INSTALL BODY PARSER ##
+### INSTALL BODY PARSER
 ```	npm install body-parser ```
 	
 	
+### GET,POST URL
+``` http://localhost:8123/query ```
+
 ## EXAMPLE POST DATA ## 
 ```html
 Creat new html file > (test.html)
