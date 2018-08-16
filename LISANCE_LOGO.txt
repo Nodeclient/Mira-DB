@@ -1,1 +1,2 @@
-[freepik](https://www.freepik.com)
+[freepik]
+https://www.freepik.com
