@@ -1,4 +1,4 @@
-# MIRA-DB EXPRESS DATABASE (HTTP)
+# MIRA-DB EXPRESS DATABASE (HTTP API)
 	
 ### INSTALL MIRA
 ``` npm install mira-db ```
