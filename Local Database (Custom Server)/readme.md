@@ -4,7 +4,7 @@
 
 ---
 
-easy integrate with your existing systems (express,socket.io,nwjs,react,visual studio,unity5,unreal engine,python,more..) and you can use it localDB at the same time
+easy integrate with your existing systems (express,java,socket.io,nwjs,react,visual studio,unity5,unreal engine,python,more..) 
 
 ## EXAMPLE DATABASE DIR ##
 Example database (you can delete after test)
