@@ -1,2 +1,2 @@
-## INSTALL ##
-npm i socket.io-client
+## INSTALL
+``` npm i socket.io-client ``` 
