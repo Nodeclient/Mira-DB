@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>MIRADB</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").keypress(function(e){
+        if (e.which == 13) {
+			var txt = $("input").val();
+			$.post("http://localhost:8123/query", { user: "root",pass: "",db: "test",query: txt}, function(result){
+				$("span").text(  JSON.stringify(result)   );
+			});
+		}
+    });
+});
+
+
+</script>
+</head>
+<body>
+
+<p>Start typing a query in the input field below (Press ENTER)</p>
+QUERY:
+
+<input type="text" size="100" value="select table person">
+
+<p>RESULT: <span></span></p>
+
+</body>
+</html>
