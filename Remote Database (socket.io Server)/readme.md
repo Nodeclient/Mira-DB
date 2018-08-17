@@ -1,4 +1,4 @@
-# MIRA-DB DATABASE (TCP BASED)
+# MIRA-DB DATABASE (TCP)
 	
 ### INSTALL MIRA
 ``` npm install mira-db ```

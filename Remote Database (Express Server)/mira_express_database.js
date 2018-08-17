@@ -35,7 +35,7 @@
                             res.send(DB_RESULT);
                         }
                 }else{
-                    res.status(500).send([false,"LOGIN_ERROR","INVALID USERNAME OR PASSWORD",0]);
+                    res.status(401).send([false,"LOGIN_ERROR","INVALID USERNAME OR PASSWORD",0]);
                 }   
                 } else {
                     res.status(500).send([false,"SERVER_ERROR","INVALID CONF FILE",100]);
