@@ -13,12 +13,17 @@ Mira-DB local & remote database server
 npm install mira-db --save
 ```
 
-## Example tutorials
-
-* [GITHUB](https://github.com/Nodeclient/Mira-DB) - (client , server , connector) example sources
-* [HELP](https://github.com/Nodeclient/Mira-DB/tree/master/Query%20schema) - query help files
-* [YOUTUBE](https://www.youtube.com/watch?v=wWt-ZyinFdM&list=PLq4qcUhhlBq4nsD4oVym8jz1WwKCFlDx1) - tutorial videos
-
+##  ADDING NEW CLIENT SOURCES
+   
+   EXPRESS    DATABASE SERVER
+   SOCKET.IO  DATABASE SERVER  
+   
+   UNITY5  DATABASE CLIENT 
+   PYTHON  DATABASE CLIENT
+   JAVA    DATABASE CLIENT 
+   C#      DATABASE CLIENT 
+   JQUERY  DATABASE CLIENT 
+  
 ## Example Querys
 
     SELECT TABLE <TABLE_NAME>; 
