@@ -13,7 +13,7 @@ Mira-DB local & remote database server
 npm install mira-db --save
 ```
 
-##  ADDING NEW CLIENT SOURCES
+## SOURCES
 
 ```
    EXPRESS    DATABASE SERVER
