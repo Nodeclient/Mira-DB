@@ -15,7 +15,7 @@ public class Test {
  public static void main(String[] args) throws IOException {
 	 
 	 /*
-	 !! IMPORTANT USE MIRA EXPRESS SERVER
+	 !! FOR MIRA EXPRESS SERVER
 	 https://github.com/Nodeclient/Mira-DB/tree/master/Remote%20Database%20(Express%20Server)
 	 */
 
