@@ -1,4 +1,5 @@
-            /*
+            /*  
+			    UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;
                 SELECT TABLE <TABLE_NAME>; 
                 SELECT TABLE <TABLE_NAME> COUNT; 
                 SELECT TABLE <TABLE_NAME> COLUMN ["COL1"];
@@ -23,7 +24,7 @@
             // INCLUDE MIRA
             const mira = require("mira-db");
             // SET YOUR USER PERMISSION
-            var perms = { SELECT:true,ADD:true,UPDATE:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true }
+            var perms = { UNIQUE:true,SELECT:true,ADD:true,UPDATE:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true }
             // YOUR STORAGE FOLDER FULL PATH
             var My_Db_folder =  "./data";
             //SELECT DATABASE

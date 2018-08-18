@@ -48,3 +48,4 @@
     });
 
     var server = app.listen(8123);
+    console.log("MIRA DB RUNNING PORT:8123")
