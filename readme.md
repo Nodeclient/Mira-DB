@@ -23,7 +23,7 @@ npm install mira-db --save
 * [PYTHON][df4]     DATABASE CLIENT
 * [JAVA][df6]       DATABASE CLIENT 
 * [C#][df3]         DATABASE CLIENT 
-* [JQUERY][df31]    DATABASE CLIENT 
+* [JQUERY][df8]     DATABASE CLIENT 
   
 ## Nodejs  > custom_server.js
 
@@ -67,6 +67,7 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
 
 ## License MIT
 
+   [df8]: </CLIENT EXAMPLE/Express Server clients/Example Client (HTML)>
    [df7]: </CLIENT EXAMPLE/Socket Server clients/Example Client (nodejs)>
    [df6]: </CLIENT EXAMPLE/Express Server clients/Example Client (java)>
    [df5]: </CLIENT EXAMPLE/Express Server clients/Example Client (UNITY5 GAME ENGINE)>
