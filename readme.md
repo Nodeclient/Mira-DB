@@ -16,14 +16,14 @@ npm install mira-db --save
 ## SOURCES
 
 
-* [EXPRESS][df1]    **DATABASE SERVER**
-* [SOCKET.IO][df2]  **DATABASE SERVER**  
-* [NODEJS][df7]     DATABASE CLIENT 
-* [UNITY5][df5]     DATABASE CLIENT 
-* [PYTHON][df4]     DATABASE CLIENT
-* [JAVA][df6]       DATABASE CLIENT 
-* [C#][df3]         DATABASE CLIENT 
-* [JQUERY][df8]     DATABASE CLIENT 
+* [EXPRESS][df1]    ** SERVER**
+* [SOCKET.IO][df2]  ** SERVER**  
+* [NODEJS][df7]      CLIENT 
+* [UNITY5][df5]      CLIENT 
+* [PYTHON][df4]      CLIENT
+* [JAVA][df6]        CLIENT 
+* [C#][df3]          CLIENT 
+* [JQUERY][df8]      CLIENT 
   
 ## Nodejs  > custom_server.js
 
