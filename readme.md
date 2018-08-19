@@ -15,18 +15,15 @@ npm install mira-db --save
 
 ## SOURCES
 
-```
-   EXPRESS    DATABASE SERVER
-   SOCKET.IO  DATABASE SERVER  
-   
-   NODEJS  DATABASE CLIENT 
-   UNITY5  DATABASE CLIENT 
-   PYTHON  DATABASE CLIENT
-   JAVA    DATABASE CLIENT 
-   C#      DATABASE CLIENT 
-   JQUERY  DATABASE CLIENT 
 
-```
+* [EXPRESS][df1]    **SERVER**
+* [SOCKET.IO][df2]  **SERVER**  
+* [NODEJS][df7]      CLIENT 
+* [UNITY5][df5]      CLIENT 
+* [PYTHON][df4]      CLIENT
+* [JAVA][df6]        CLIENT 
+* [C#][df3]          CLIENT 
+* [JQUERY][df8]      CLIENT 
   
 ## Nodejs  > custom_server.js
 
@@ -68,11 +65,17 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
     
 ```
 
-## License
+## License MIT
 
-MIT
-
-[npm-image]: https://img.shields.io/npm/v/mira-db.svg?style=flat
-[npm-url]: https://npmjs.org/package/mira-db
-[downloads-image]: https://img.shields.io/npm/dm/mira-db.svg?style=flat
-[downloads-url]: https://npmjs.org/package/mira-db
+   [df8]: </CLIENT EXAMPLE/Express Server clients/Example Client (HTML)>
+   [df7]: </CLIENT EXAMPLE/Socket Server clients/Example Client (nodejs)>
+   [df6]: </CLIENT EXAMPLE/Express Server clients/Example Client (java)>
+   [df5]: </CLIENT EXAMPLE/Express Server clients/Example Client (UNITY5 GAME ENGINE)>
+   [df4]: </CLIENT EXAMPLE/Express Server clients/Example Client (PYTHON)>
+   [df3]: </CLIENT EXAMPLE/Express Server clients/Example Client (C%23)>
+   [df2]: </SERVER EXAMPLE/Remote Database (socket.io Server)>
+   [df1]: </SERVER EXAMPLE/Remote Database (express Server)>
+   [npm-image]: https://img.shields.io/npm/v/mira-db.svg?style=flat
+   [npm-url]: https://npmjs.org/package/mira-db
+   [downloads-image]: https://img.shields.io/npm/dm/mira-db.svg?style=flat
+   [downloads-url]: https://npmjs.org/package/mira-db
