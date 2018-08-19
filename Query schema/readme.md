@@ -1,4 +1,4 @@
-##  Query statements
+##  EXPLAIN Syntax
 
     ``` "UNIQUE COLUMN"       :  the data returned only (UNIQUE) values in the selected column. ```   
 
@@ -40,7 +40,7 @@
 
     ``` "LIST TABLE"          :  to list table in database ``` 
 
-## Example Querys
+##  Query Statements
     UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;
     SELECT TABLE <TABLE_NAME>; 
     SELECT TABLE <TABLE_NAME> COUNT; 
