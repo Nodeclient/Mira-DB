@@ -15,8 +15,8 @@ npm install mira-db --save
 
 ## SOURCES
 
-```
-   [EXPRESS][df1]    DATABASE SERVER
+
+   [EXPRESS][df1]   DATABASE SERVER
    SOCKET.IO  DATABASE SERVER  
    
    NODEJS  DATABASE CLIENT 
@@ -25,8 +25,6 @@ npm install mira-db --save
    JAVA    DATABASE CLIENT 
    C#      DATABASE CLIENT 
    JQUERY  DATABASE CLIENT 
-
-```
   
 ## Nodejs  > custom_server.js
 
