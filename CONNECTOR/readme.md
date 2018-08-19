@@ -6,10 +6,13 @@
 
     <script>
         $(document).ready(function() {
-            var db = new MiraDB("root","","http://localhost:8123/query","test");
-            db.query("select table person",function(result){
-                $("p").text( JSON.stringify( result) );
-            });     
+           
+           var db = new MiraDB("root","","http://localhost:8123/query","test");
+            
+             db.query("select table person",function(result){
+                 $("p").text( JSON.stringify( result) );
+             });    
+            
         }); 
     </script>
 ```
@@ -22,9 +25,10 @@
 
     <script>
         $(document).ready(function() {
-            var db = new MiraDB("root","","127.0.0.1:8123","test");
+           
+           var db = new MiraDB("root","","127.0.0.1:8123","test");
                 
-                db.Connect();
+              db.Connect();
 
                 db.Query("select table person",function(result){
                     $("p").text( JSON.stringify( result) );
