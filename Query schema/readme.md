@@ -10,13 +10,13 @@
 
     ``` "SELECT TABLE LIMIT"  :  the data returned specify the number of records (range 0-1) ``` 
 
-    ``` "SELECT TABLE FIND"   :  finds rows that contain a specific string value in a data. ``` 
+    ``` "SELECT TABLE FIND"   :  finds rows that contain a specific string value in a column. ``` 
     
     ``` "UPDATE ROW"          :  modify the existing records in a data table. ```    
 
-    ``` "ADD ROW"             :  insert a new record in a data table. ```  
+    ``` "ADD ROW"             :  insert new record in a data table. ```  
 
-    ``` "ADD COLUMN"          :  add a new column in a data table. ```   
+    ``` "ADD COLUMN"          :  create new column in a data table. ```   
 
     ``` "RENAME TABLE"        :  to rename a table in data. ```     
 
