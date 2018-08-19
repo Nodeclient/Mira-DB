@@ -16,8 +16,8 @@ npm install mira-db --save
 ## SOURCES
 
 
-* [EXPRESS][df1]    DATABASE SERVER
-* [SOCKET.IO][df2]  DATABASE SERVER  
+* [EXPRESS][df1]    **DATABASE SERVER**
+* [SOCKET.IO][df2]  **DATABASE SERVER**  
 * [NODEJS][df7]     DATABASE CLIENT 
 * [UNITY5][df5]     DATABASE CLIENT 
 * [PYTHON][df4]     DATABASE CLIENT
