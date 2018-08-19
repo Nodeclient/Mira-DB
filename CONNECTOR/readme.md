@@ -10,7 +10,7 @@
            var db = new MiraDB("root","","http://localhost:8123/query","test");
             
              db.query("select table person",function(result){
-                 $("p").text( JSON.stringify( result) );
+                 $("div").text( JSON.stringify( result) );
              });    
             
         }); 
@@ -31,7 +31,7 @@
               db.Connect();
 
                 db.Query("select table person",function(result){
-                    $("p").text( JSON.stringify( result) );
+                    $("div").text( JSON.stringify( result) );
                 });     
         }); 
     </script>
