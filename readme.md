@@ -28,7 +28,7 @@ npm install mira-db --save
 
 ```
   
-## Nodejs  >  local_custom_server.js
+## Nodejs  > custom_server.js
 
 easy integrate with your existing systems (express,socket.io,python,nwjs,react,unity5,more..)
 
