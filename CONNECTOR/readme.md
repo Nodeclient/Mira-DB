@@ -1,5 +1,5 @@
 
-### Exress Connector
+### Express.js Connector
  ```js
     <script src="./jquery.min.js"></script>
     <script src="./miradb.express.1.0.1.js"></script>
@@ -14,7 +14,7 @@
     </script>
 ```
 
-### Socket Connector
+### Socket.IO Connector
  ```js
     <script src="./socket.io-1.4.5.js"></script>
     <script src="./jquery.min.js"></script>
