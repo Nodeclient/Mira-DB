@@ -68,11 +68,11 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
     
 ```
 
-## License
+## License MIT
 
-MIT
-[df1]: </Nodeclient/Mira-DB/tree/master/SERVER EXAMPLE/Remote Database (express Server)>
-[npm-image]: https://img.shields.io/npm/v/mira-db.svg?style=flat
-[npm-url]: https://npmjs.org/package/mira-db
-[downloads-image]: https://img.shields.io/npm/dm/mira-db.svg?style=flat
-[downloads-url]: https://npmjs.org/package/mira-db
+
+   [df1]: </Nodeclient/Mira-DB/tree/master/SERVER EXAMPLE/Remote Database (express Server)>
+   [npm-image]: https://img.shields.io/npm/v/mira-db.svg?style=flat
+   [npm-url]: https://npmjs.org/package/mira-db
+   [downloads-image]: https://img.shields.io/npm/dm/mira-db.svg?style=flat
+   [downloads-url]: https://npmjs.org/package/mira-db
