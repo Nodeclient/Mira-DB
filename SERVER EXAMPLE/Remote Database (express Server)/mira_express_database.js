@@ -4,7 +4,7 @@
     var UserData = require('mira-db/userdata');
     var app = express();
  
-    var USR_PERM = { SELECT:true,ADD:true,UPDATE:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true } ;
+    var USR_PERM = { UNIQUE:true,SELECT:true,ADD:true,UPDATE:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true } ;
     var DB_DIR = "./data";
 
     app.use(express.static('public')); 
