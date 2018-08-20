@@ -63,15 +63,15 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
 
 ## License MIT
 
-   [df9]: </Help Docs>
-   [df8]: </CLIENT EXAMPLE/Express Server clients/Example Client (HTML)>
-   [df7]: </CLIENT EXAMPLE/Socket Server clients/Example Client (nodejs)>
-   [df6]: </CLIENT EXAMPLE/Express Server clients/Example Client (java)>
-   [df5]: </CLIENT EXAMPLE/Express Server clients/Example Client (UNITY5 GAME ENGINE)>
-   [df4]: </CLIENT EXAMPLE/Express Server clients/Example Client (PYTHON)>
-   [df3]: </CLIENT EXAMPLE/Express Server clients/Example Client (C%23)>
-   [df2]: </SERVER EXAMPLE/Remote Database (socket.io Server)>
-   [df1]: </SERVER EXAMPLE/Remote Database (express Server)>
+   [df9]: <https://github.com/Nodeclient/Mira-DB/tree/master/Help Docs>
+   [df8]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (HTML)>
+   [df7]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Socket Server clients/Example Client (nodejs)>
+   [df6]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (java)>
+   [df5]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (UNITY5 GAME ENGINE)>
+   [df4]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (PYTHON)>
+   [df3]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (C%23)>
+   [df2]: <https://github.com/Nodeclient/Mira-DB/tree/master/SERVER EXAMPLE/Remote Database (socket.io Server)>
+   [df1]: <https://github.com/Nodeclient/Mira-DB/tree/master/SERVER EXAMPLE/Remote Database (express Server)>
    [npm-image]: https://img.shields.io/npm/v/mira-db.svg?style=flat
    [npm-url]: https://npmjs.org/package/mira-db
    [downloads-image]: https://img.shields.io/npm/dm/mira-db.svg?style=flat
