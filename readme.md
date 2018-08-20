@@ -6,10 +6,12 @@
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/mira-db)
 [![Known Vulnerabilities](https://snyk.io/test/npm/mira-db/badge.svg)](https://snyk.io/test/npm/mira-db)
 
-Mira-DB local & remote database server
+Mira-DB local & remote database
+easy integrate with your existing systems (express,socket.io,python,nwjs,react,unity5,more..)
 
 ## HELP DOCUMENT
 * [Help Files][df9]
+
 ## SOURCES
 
 * [EXPRESS][df1]    **SERVER**
@@ -22,8 +24,6 @@ Mira-DB local & remote database server
 * [JQUERY][df8]      CLIENT 
   
 ## Nodejs  > custom_server.js
-
-easy integrate with your existing systems (express,socket.io,python,nwjs,react,unity5,more..)
 
  ```js
     // INCLUDE MIRA
