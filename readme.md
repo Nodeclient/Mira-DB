@@ -8,13 +8,9 @@
 
 Mira-DB local & remote database server
 
-## Installation
-```
-npm install mira-db --save
-```
-
+## HELP DOCUMENT
+* [EXPRESS][df9]
 ## SOURCES
-
 
 * [EXPRESS][df1]    **SERVER**
 * [SOCKET.IO][df2]  **SERVER**  
@@ -67,6 +63,7 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
 
 ## License MIT
 
+   [df9]: </CLIENT EXAMPLE/Express Server clients/Query schema>
    [df8]: </CLIENT EXAMPLE/Express Server clients/Example Client (HTML)>
    [df7]: </CLIENT EXAMPLE/Socket Server clients/Example Client (nodejs)>
    [df6]: </CLIENT EXAMPLE/Express Server clients/Example Client (java)>
