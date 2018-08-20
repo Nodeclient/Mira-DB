@@ -40,7 +40,7 @@
 
 ``` "LIST TABLE"          :  to list table in database ``` 
 
-##  Query Statements
+##  Syntax
 
     UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;
     SELECT TABLE <TABLE_NAME>;    
