@@ -1,5 +1,5 @@
 ##  EXPLAIN Syntax
-
+                             UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;
 ``` "UNIQUE COLUMN"       :  the data returned only (UNIQUE) values in the selected column. ```   
 
 ``` "SELECT TABLE"        :  the data returned is stored in a result table ``` 
@@ -41,7 +41,7 @@
 ``` "LIST TABLE"          :  to list table in database ``` 
 
 ##  Query Statements
-    UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;
+
     SELECT TABLE <TABLE_NAME>; 
     SELECT TABLE <TABLE_NAME> COUNT; 
     SELECT TABLE <TABLE_NAME> COLUMN ["COL1"];
