@@ -10,7 +10,7 @@ Mira-DB local & remote database
 easy integrate with your existing systems (express,socket.io,python,nwjs,react,unity5,more..)
 
 ## HELP DOCUMENT
-* [Help Files][df9]
+* [Help Document][df9]
 
 ## SOURCES
 
