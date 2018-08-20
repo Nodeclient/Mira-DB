@@ -41,6 +41,7 @@
     ``` "LIST TABLE"          :  to list table in database ``` 
 
 ##  Query Statements
+
     UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;
     SELECT TABLE <TABLE_NAME>; 
     SELECT TABLE <TABLE_NAME> COUNT; 
