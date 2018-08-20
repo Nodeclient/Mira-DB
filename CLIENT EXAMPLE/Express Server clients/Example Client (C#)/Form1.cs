@@ -22,7 +22,7 @@ namespace $safeprojectname$
 
             /* 
              * HTTP POST Example (Evan Mulawski)
-             * Remote Database (Express Server) https://github.com/Nodeclient/Mira-DB
+             * (Express Server) Client
              * QUERY URL http://localhost:8123/query
             */
 
