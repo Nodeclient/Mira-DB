@@ -1,11 +1,11 @@
 ##  EXPLAIN Syntax
-                             UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;
+
 ``` "UNIQUE COLUMN"       :  the data returned only (UNIQUE) values in the selected column. ```   
-
+                             UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;
 ``` "SELECT TABLE"        :  the data returned is stored in a result table ``` 
-
+                             SELECT TABLE <TABLE_NAME>; 
 ``` "SELECT TABLE COUNT"  :  the data returned number of result in the table ``` 
-
+                             SELECT TABLE <TABLE_NAME> COUNT; 
 ``` "SELECT TABLE COLUMN" :  the data returned selected columns in the table ``` 
 
 ``` "SELECT TABLE LIMIT"  :  the data returned specify the number of records (range 0-1) ``` 
@@ -42,7 +42,7 @@
 
 ##  Query Statements
 
-    SELECT TABLE <TABLE_NAME>; 
+
     SELECT TABLE <TABLE_NAME> COUNT; 
     SELECT TABLE <TABLE_NAME> COLUMN ["COL1"];
     SELECT TABLE <TABLE_NAME> LIMIT ["0","10"];
