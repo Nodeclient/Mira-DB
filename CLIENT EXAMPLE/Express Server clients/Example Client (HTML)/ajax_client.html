@@ -3,14 +3,19 @@
 <head>
 <title>MIRADB</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../../CONNECTOR/Express client/miradb.express.1.0.1.js"></script>
 <script>
 $(document).ready(function(){
+ var db = new MiraDB("root","","http://localhost:8123/query","test");
+ 
     $("input").keypress(function(e){
         if (e.which == 13) {
 			var txt = $("input").val();
-			$.post("http://localhost:8123/query", { user: "root",pass: "",db: "test",query: txt}, function(result){
-				$("span").text(  JSON.stringify(result)   );
-			});
+			
+			    db.query(txt,function(result){
+							$("span").text(  JSON.stringify(result)   );
+				}); 
+
 		}
     });
 });

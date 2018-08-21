@@ -5,8 +5,12 @@ var MiraDB = function(user,password,server,database) {
         client.server = server;
         client.database = database;    
                 client.query = function(str,callback) {
-                $.post(  client.server , {"user":client.user, "pass":client.password,"db":client.database,"query":str  }).done(function( data ) {
-                    callback(data);
-                });      
+                $.post(  client.server , {"user":client.user, "pass":client.password,"db":client.database,"query":str  })
+				.done(function( data ) {
+                    callback(data,null);
+                })
+				.fail(function(xhr, status, error) {
+					callback(null,xhr);
+				});		
             }
 };
