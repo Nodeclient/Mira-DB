@@ -10,7 +10,7 @@ namespace MIRA
 {
     public class database
     {
-
+        //EXPRESS SERVER CONNECTOR
         public string Server;
         public string User;
         public string Password;
