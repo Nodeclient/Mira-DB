@@ -42,17 +42,17 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
         LIST:true 
     }
     // YOUR STORAGE FOLDER FULL PATH
-    var My_Db_folder = "/your_database_folder";
+    var My_db_folder = "/your_database_folder";
     //SELECT DATABASE
-    var My_Db_name = "test";
+    var My_db_name = "test";
     // CREATE NEW DATABASE OBJECT
-    var mydb = new mira(My_Db_folder,"UTF-8");
+    var mydb = new mira(My_db_folder,"UTF-8");
     // SET QUERY
     var query = 'SELECT TABLE person';
 
     
     // RESULT METHOD (EXAMPLE) 1
-    var result = mydb.Query(query,My_Db_name,perms);
+    var result = mydb.Query(query,My_db_name,perms);
     console.log(  result );
     
     // RESULT METHOD (EXAMPLE) 2

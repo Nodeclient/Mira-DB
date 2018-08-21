@@ -10,13 +10,11 @@ $(document).ready(function(){
  
     $("input").keypress(function(e){
         if (e.which == 13) {
-			var txt = $("input").val();
-			
-			    db.query(txt,function(result){
-							$("span").text(  JSON.stringify(result)   );
-				}); 
-
-		}
+	    var txt = $("input").val();	
+		db.query(txt,function(result){
+		   $("span").text(  JSON.stringify(result)   );
+		}); 
+	}
     });
 });
 
