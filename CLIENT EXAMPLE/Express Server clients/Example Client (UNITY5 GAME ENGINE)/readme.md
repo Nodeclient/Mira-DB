@@ -1,5 +1,19 @@
 ## MIRA DB UNITY-5 GAME ENGINE CLIENT
-Express server unity example
+
+
+### IMPORT "MIRA.DLL"
+```c#
+       //IMPORT DLL
+       MIRA.database db = new MIRA.database();
+       //SET CONF
+       db.User = "root";
+       db.Password = "";
+       db.Database = "test";
+       db.Server = "http://localhost:8123/query";
+       //RETURN DATA
+       string result = db.Query("select table person");
+       Debug.Log(result);
+```
 
 ### JSON Serialization
 https://docs.unity3d.com/Manual/JSONSerialization.html
