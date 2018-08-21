@@ -1,5 +1,5 @@
 ### MIRA.DLL Connector
- ```c
+ ```c#
         //IMPORT DLL
         MIRA.database db = new MIRA.database();
         //SET CONF
