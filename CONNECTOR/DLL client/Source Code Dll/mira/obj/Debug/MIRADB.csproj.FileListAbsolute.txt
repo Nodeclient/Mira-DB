@@ -1,0 +1,8 @@
+c:\users\developer\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\MIRA.dll
+c:\users\developer\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\MIRA.pdb
+c:\users\developer\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\MIRA.dll
+c:\users\developer\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\MIRA.pdb
+C:\Users\Developer\Documents\visual studio 2015\Projects\MiraDb\mira\bin\Debug\MIRA.dll
+C:\Users\Developer\Documents\visual studio 2015\Projects\MiraDb\mira\bin\Debug\MIRA.pdb
+C:\Users\Developer\Documents\visual studio 2015\Projects\MiraDb\mira\obj\Debug\MIRA.dll
+C:\Users\Developer\Documents\visual studio 2015\Projects\MiraDb\mira\obj\Debug\MIRA.pdb
