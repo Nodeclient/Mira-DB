@@ -67,7 +67,9 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
     mydb.Query(query,My_Db_name,perms ,function(result){
       console.log(  result );
     });           
-```      
+```  
+
+
 -----
 ## Nodejs  > Backup.js
 
@@ -76,25 +78,19 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
         var Backup = require('mira-db/backup');
         // <CHAR_SET> , <FILE_DESCRIPTION>
         var SetBackup = new Backup("utf8","Hello this is my first backup file");
-```
 
-```js
         // Backup & export database storage folder
         // <YOUR_DATABASE_FOLDER> , <BACKUP_FILE_NAME>
         SetBackup.Export("/YOUR_STORAGE_FOLDER","c:/myStorage.backup",function(data){
             console.log(data)
         });
-```    
 
-```js
         // Read backup file Info
         // <BACKUP_FILE_NAME>
         SetBackup.Info("c:/myStorage.backup",function(data){
             console.log(data)
         });
-```
 
-```js
         // Restore a database backup
         // <YOUR_DATABASE_FOLDER> , <BACKUP_FILE_NAME>
         SetBackup.Import("/YOUR_STORAGE_FOLDER","c:/myStorage.backup",function(data){
