@@ -1,5 +1,16 @@
+### PHP-5.x Connector
+
+```php
+<?php
+    include 'miradb_php_connector.php';
+        $db = new MiraDB("root","","http://localhost:8123/query","test");
+             echo  $db->query("select table person");
+?>
+```
+
 ### MIRA.DLL Connector
- ```c#
+
+```c#
         //IMPORT DLL
         MIRA.database db = new MIRA.database();
         //SET CONF
@@ -13,7 +24,8 @@
 ```
 
 ### Express.js Connector
- ```js
+
+```js
     var db = new MiraDB("root","","http://localhost:8123/query","test");
             
        db.query("select table person",function(result){
@@ -22,7 +34,8 @@
 ```
 
 ### Socket.IO Connector
- ```js       
+
+```js       
     var db = new MiraDB("root","","127.0.0.1:8123","test");
                 
         db.Connect();
