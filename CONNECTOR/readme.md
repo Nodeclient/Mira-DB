@@ -23,7 +23,7 @@
         Debug.Log(result);
 ```
 
-### Express.js Connector
+### Express Connector
 
 ```js
     var db = new MiraDB("root","","http://localhost:8123/query","test");
