@@ -53,18 +53,19 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
     var mydb = new mira(My_db_folder,"UTF-8");
     // SET QUERY
     var query = 'SELECT TABLE person';
-
-    
+```
+```js    
     // RESULT METHOD (EXAMPLE) 1
     var result = mydb.Query(query,My_db_name,perms);
     console.log(  result );
-    
+```  
+```js    
     // RESULT METHOD (EXAMPLE) 2
     mydb.Query(query,My_Db_name,perms ,function(result){
       console.log(  result );
     });           
-    
-```
+```      
+
 
 ## Nodejs  > Backup.js
 
