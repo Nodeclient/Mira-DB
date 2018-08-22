@@ -1,4 +1,4 @@
-### PHP-5.x Connector
+### PHP Connector
 
 ```php
 <?php
