@@ -8,7 +8,7 @@
 ?>
 ```
 
-### MIRA.DLL Connector
+### DLL Connector
 
 ```c#
         //IMPORT DLL
