@@ -26,7 +26,7 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
 * [JQUERY][df8]      CLIENT 
   
 ## CONNECTOR
-* [ALL][df11]        CONNECTOR
+* [CONNECTOR][df11]
 
 ## Nodejs  > custom_server.js
 
