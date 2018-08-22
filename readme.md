@@ -66,6 +66,31 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
     
 ```
 
+## Nodejs  > Backup.js
+```js
+        // INCLUDE BACKUP
+        var Backup = require('mira-db/backup');
+        // <CHAR_SET> , <FILE_DESCRIPTION>
+        var SetBackup = new Backup("utf8","Hello this is my first backup file");
+```
+```js
+        // Backup & export database storage folder
+        // <YOUR_DATABASE_FOLDER> , <BACKUP_FILE_NAME>
+        SetBackup.Export("/YOUR_STORAGE_FOLDER","c:/myStorage.backup",function(data){
+            console.log(data)
+        });
+        // Read backup file Info
+        // <BACKUP_FILE_NAME>
+        SetBackup.Info("c:/myStorage.backup",function(data){
+            console.log(data)
+        });
+        // Restore a database backup
+        // <YOUR_DATABASE_FOLDER> , <BACKUP_FILE_NAME>
+        SetBackup.Import("/YOUR_STORAGE_FOLDER","c:/myStorage.backup",function(data){
+            console.log( data )
+        });
+```
+
 ## License MIT
    [df11]: <https://github.com/Nodeclient/Mira-DB/tree/master/CONNECTOR>
    [df10]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (PHP5)>
