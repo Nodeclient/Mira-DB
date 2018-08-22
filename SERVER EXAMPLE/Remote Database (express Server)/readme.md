@@ -11,7 +11,8 @@
 		
 ### GET,POST URL (TYPE)
 Content-type: application/x-www-form-urlencoded
-```Server-url  : http://localhost:8123/query ```
+
+```http://localhost:8123/query```
 
 ## EXAMPLE POST DATA ## 
 ```html
