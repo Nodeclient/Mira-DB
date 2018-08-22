@@ -9,9 +9,6 @@
 Mira-DB local & remote database
 easy integrate with your existing systems (express,socket.io,python,nwjs,react,unity5,more..)
 
-## DB CONNECTOR
-* [ALL][df11]        APPLICATION CONNECTOR
-
 ## HELP DOCUMENT
 * [Help Document][df9]
 
@@ -28,6 +25,9 @@ easy integrate with your existing systems (express,socket.io,python,nwjs,react,u
 * [C#][df3]          CLIENT 
 * [JQUERY][df8]      CLIENT 
   
+## CONNECTOR
+* [ALL][df11]        CONNECTOR
+
 ## Nodejs  > custom_server.js
 
  ```js
