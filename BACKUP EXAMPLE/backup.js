@@ -4,7 +4,7 @@
         
         var My_Backup_File ="./myStorage.backup";
 
-        SetBackup.Export("./data",My_Backup_File,function(data){
+        SetBackup.Export("./YOUR_DATA_STORAGE_FOLDER",My_Backup_File,function(data){
             console.log(data)
         });
 
