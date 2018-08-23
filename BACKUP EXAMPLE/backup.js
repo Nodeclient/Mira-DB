@@ -13,20 +13,18 @@
         });
 
 
-/*    // ----------- OPTIONS (export,import,info)------------ //
-
-        // Backup & export database storage folder
-        // <YOUR_DATABASE_FOLDER> , <BACKUP_FILE_NAME>
+/*    
+        // EXPORT
         SetBackup.Export("/YOUR_STORAGE_FOLDER","c:/myStorage.backup",function(data){
             console.log(data)
         });
-        // Read backup file Info
-        // <BACKUP_FILE_NAME>
+        
+        // INFO
         SetBackup.Info("c:/myStorage.backup",function(data){
             console.log(data)
         });
-        // Restore a database backup
-        // <YOUR_DATABASE_FOLDER> , <BACKUP_FILE_NAME>
+        
+         // IMPORT
         SetBackup.Import("/YOUR_STORAGE_FOLDER","c:/myStorage.backup",function(data){
             console.log( data )
         });
