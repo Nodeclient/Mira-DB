@@ -5,7 +5,7 @@
 ```c#
        //IMPORT DLL
        MIRA.database db = new MIRA.database();
-       //SET CONF
+       //SET OPTION
        db.User = "root";
        db.Password = "";
        db.Database = "test";
