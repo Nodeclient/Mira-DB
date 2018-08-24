@@ -1,6 +1,5 @@
-### NODE.JS Connector
-install request plugin
-    ``` npm i request -g ```
+### NODE.JS (app) Connector
+install request plugin ``` npm i request -g ```
 
 ```js
     const MiraDB = require("./nodejs_express_connector");
@@ -12,7 +11,7 @@ install request plugin
 ```
 
 
-### PHP Connector
+### PHP (app,html) Connector
 
 ```php
 <?php
@@ -22,7 +21,7 @@ install request plugin
 ?>
 ```
 
-### DLL Connector
+### DLL (app) Connector
 
 ```c#
         //IMPORT DLL
@@ -37,7 +36,7 @@ install request plugin
         Debug.Log(result);
 ```
 
-### Express Connector
+### Express (html) Connector
 
 ```js
     var db = new MiraDB("root","","http://localhost:8123/query","test");      
@@ -46,7 +45,7 @@ install request plugin
        });    
 ```
 
-### Socket.IO Connector
+### Socket.IO (html) Connector
 
 ```js       
     var db = new MiraDB("root","","127.0.0.1:8123","test");               
