@@ -10,8 +10,6 @@
 ```	npm install body-parser ```
 		
 ### GET,POST URL (TYPE)
-Content-type: application/x-www-form-urlencoded
-
 ```http://localhost:8123/query```
 
 ## EXAMPLE POST DATA ## 
