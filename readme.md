@@ -5,6 +5,7 @@
 [![Try mira-db on RunKit](https://badge.runkitcdn.com/mira-db.svg)](https://npm.runkit.com/mira-db)
 [![Slack Status](https://img.shields.io/badge/slack-Nodeclient-blue.svg?longCache=true&style=flat)](https://nodeclient.slack.com)
 [![Known Vulnerabilities](https://snyk.io/test/npm/mira-db/badge.svg)](https://snyk.io/test/npm/mira-db)
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 Mira-DB local & remote database
 easy integrate with your existing systems (express,socket.io,python,nwjs,react,unity5,more..)
