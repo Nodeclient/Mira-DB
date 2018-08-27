@@ -1,11 +1,11 @@
 ## MIRA DB UNITY-5 GAME ENGINE CLIENT
 
-* MiraDB_Uniy_Engine_Connector(DLL).unitypackage (Only Windows)
-* MiraDB_Uniy_Engine_Connector(NO DLL).unitypackage (ALL OS)
+* MiraDB_Uniy_Engine_Connector(DLL).unitypackage    - (Only Windows)
+* MiraDB_Uniy_Engine_Connector(NO DLL).unitypackage - (ALL OS)
 
 ### IMPORT "MIRA.DLL"
 ```c#
-       //IMPORT DLL
+       //IMPORT DLL FILE "MIRA.dll" -> [GITHUB]/Mira-DB/CONNECTOR/DLL/
        MIRA.database db = new MIRA.database();
        //SET OPTION
        db.User = "root";
