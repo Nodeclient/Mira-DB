@@ -1,2 +1,2 @@
-AutoIt Download
+### AutoIt
 https://www.autoitscript.com
