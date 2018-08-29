@@ -1,4 +1,4 @@
-# Mira Database Server
+# Mira Json Database Server
 
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
