@@ -103,7 +103,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
    [df10]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (PHP5)>
    [df9]: <https://github.com/Nodeclient/Mira-DB/tree/master/HELP DOCS>
    [df8]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (HTML)>
-   [df7]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Socket Server clients/Example Client (nodejs)>
+   [df7]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT%20EXAMPLE/Express%20Server%20clients/Example%20Client%20(NODE.JS)>
    [df6]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (java)>
    [df5]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (UNITY5 GAME ENGINE)>
    [df4]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (PYTHON)>
