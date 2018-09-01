@@ -10,6 +10,7 @@
 ![](cnu.jpg)
 
 
+
 ##  EXPLAIN Querys
 
 ``` "UNIQUE COLUMN"       :  the data returned only (UNIQUE) values in the selected column. ```   
@@ -52,6 +53,10 @@
 
 ``` "LIST TABLE"          :  to list table in database ``` 
 
+
+
+
+
 ## Example Referances
 
 ``` UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>; ```
@@ -93,6 +98,9 @@
 ``` LIST DATABASE; ```
     
 ``` LIST TABLE <DATABASE_NAME>; ```
+
+
+
 
 ##  Help file
  + query help for dummies.pdf
