@@ -1,5 +1,6 @@
 ## Creating New Database & Table
-**Step 1**  Creat a new storage folder -> example (c:/databases)
+**Step 1**  Creat a new storage folder -> ```example (c:/databases)```
+
 **Step 2**  Creat a new database in storage folder  
 > 	 CREATE DATABASE Login ;
 
