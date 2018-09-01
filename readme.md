@@ -7,8 +7,8 @@
 [![Known Vulnerabilities](https://snyk.io/test/npm/mira-db/badge.svg)](https://snyk.io/test/npm/mira-db)
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-Mira-DB local & remote database
-easy integrate with your existing systems (express,socket.io,python,nwjs,react,unity5,more..)
+Mira-DB local & remote Json database server
+easy integrate with your existing systems (express,socket.io,python,php,react,unity5,visual studio,autoit,java,jquery,and more..)
 
 ## HELP DOCUMENT
 * [Help Document][df9]
