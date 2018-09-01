@@ -1,4 +1,7 @@
-##  EXPLAIN Syntax
+##  New Database & Table Creating
+
+
+##  EXPLAIN Querys
 
 ``` "UNIQUE COLUMN"       :  the data returned only (UNIQUE) values in the selected column. ```   
 
@@ -40,7 +43,7 @@
 
 ``` "LIST TABLE"          :  to list table in database ``` 
 
-##  Query Referances
+## Example Referances
 
 ``` UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>; ```
 
