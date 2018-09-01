@@ -4,7 +4,7 @@
 **Step 2**  Creat a new database in storage folder  
 > 	 CREATE DATABASE Login ;
 
-**Step 3**  Creat a new table in database (**Login**)
+**Step 3**  Creat a new table (**Users**) in database (**Login**)
 > 	  CREATE TABLE Users COLUMN ["username","password","email"] VALUE ["leo","1234","leo.zacharry@example.com"];
 
 ![](cnu.jpg)
