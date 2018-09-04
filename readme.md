@@ -1,14 +1,6 @@
 # Coming soon (Upcoming Features)
+* [READ][df12] 
 
->   ** 1 **  MiraDB database admin (web interface)
-
-   ![](https://image.ibb.co/kkjy2z/ma.png)
-   
->  ** 2 **  Database Compressing
-
->  ** 3 **  Column types and auto increment
-
->  ** 4 **  [DELETE INDEX] Query
 ---
 
 # Mira Json Database Server
@@ -112,6 +104,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+   [df12]: <https://github.com/Nodeclient/Mira-DB/tree/master/HELP DOCS/news.md>
    [df11]: <https://github.com/Nodeclient/Mira-DB/tree/master/CONNECTOR>
    [df10]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (PHP5)>
    [df9]: <https://github.com/Nodeclient/Mira-DB/tree/master/HELP DOCS>
