@@ -8,6 +8,7 @@
 
 >  ** 3 **  Column types and auto increment
 
+>  ** 4 **  [DELETE INDEX] Query
 ---
 
 # Mira Json Database Server
