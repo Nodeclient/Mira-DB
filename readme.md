@@ -1,3 +1,15 @@
+# Coming soon (features)
+
+>   ** 1**- MiraDB database admin (web interface)
+
+   ![](https://image.ibb.co/kkjy2z/ma.png)
+   
+>  ** 2**- Database Compressing
+
+>  ** 3**- Column types and auto increment
+
+---
+
 # Mira Json Database Server
 
 [![NPM version][npm-image]][npm-url]
