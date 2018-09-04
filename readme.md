@@ -1,8 +1,3 @@
-# Coming soon (Upcoming Features)
-* [READ][df12] 
-
----
-
 # Mira Json Database Server
 
 [![NPM version][npm-image]][npm-url]
@@ -14,6 +9,8 @@
 
 Mira-DB local & remote Json database server
 easy integrate with your existing systems (express,socket.io,python,php,react,unity5,visual studio,autoit,java,jquery,and more..)
+
+---
 
 ## HELP DOCUMENT
 * [Help Document][df9]
@@ -34,8 +31,10 @@ easy integrate with your existing systems (express,socket.io,python,php,react,un
 ## CONNECTOR
 * [CONNECTOR][df11]
 
+# Upcoming Features
+* [READ NOW][df12] 
 
-
+---
 
 ## Nodejs  > custom_server.js
 
