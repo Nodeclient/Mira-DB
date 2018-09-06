@@ -2,7 +2,6 @@
 
 ```java
     import  org.mira.database.db;
-
 	     db Conn = new db();
 	   	   Conn.user="root";
 	   	   Conn.password="";
@@ -11,7 +10,10 @@
 		   
 		   String result = Conn.Query("select table person");
 		   System.out.println( result );
-
+         /*
+            JSON PARSER -> 
+            https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+        */
 ```
 
 ### NODE.JS Connector (app)
