@@ -40,6 +40,8 @@
 ``` "DELETE COLUMN"       :  to delete a column in a table ```  
 
 ``` "DELETE ROW"          :  to delete a selected record in a table  ```   
+
+``` "DELETE ROW INDEX"    :  to delete selected index ```   
         
 ``` "CREATE TABLE"        :  create a new table in a data ``` 
 
@@ -86,7 +88,9 @@
 ``` DELETE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;  ```
     
 ``` DELETE ROW <TABLE_NAME> COLUMN <COLUMN_NAME> VALUE ["STRING"]; ```
-    
+
+``` DELETE ROW <TABLE_NAME> INDEX <INDEX_NUMBER>; ```
+   
 ``` CREATE TABLE <TABLE_NAME> COLUMN ["COL1","COL2","COL3"] VALUE ["VAL1","VAL2","VAL3"]; ```
     
 ``` CREATE DATABASE <DATABASE_NAME>; ```
