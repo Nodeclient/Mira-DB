@@ -8,8 +8,7 @@
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 Mira-DB local & remote Json database server
-easy integrate with your existing systems (express,socket.io,python,php,react,unity5,visual studio,autoit,java,jquery,and more..)
-
+*  easy integrate with your existing projects , native apps and etc..
 ---
 
 ## HELP DOCUMENT
