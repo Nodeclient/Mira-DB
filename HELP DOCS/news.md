@@ -8,4 +8,4 @@
 
 >  ** 3 **  Column types and auto increment
 
->  ** 4 **  [DELETE INDEX] Query
+>  ** 4 **  ~~[DELETE INDEX] Query~~ (**Published**) 1.0.22
