@@ -11,7 +11,7 @@
 
 
 
-##  EXPLAIN Querys
+## EXPLAIN QUERIES
 
 ``` "UNIQUE COLUMN"       :  the data returned only (UNIQUE) values in the selected column. ```   
 
@@ -57,9 +57,7 @@
 
 
 
-
-
-## Example Referances
+## EXAMPLE QUERIES
 
 ``` UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>; ```
 
