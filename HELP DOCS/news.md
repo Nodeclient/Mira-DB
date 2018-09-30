@@ -1,11 +1,11 @@
 ### Upcoming Features
 
->   ** 1 **  MiraDB database admin (web interface)
+>  MiraDB database admin (web interface)
 
-   ![](https://image.ibb.co/kkjy2z/ma.png)
+   ![](https://image.ibb.co/kJpRJe/1bd4ecef_b5c8_4862_9741_d045ab0fc04f.png)
    
->  ** 2 **  Database Compressing
+> Database Compressing Module
 
->  ** 3 **  Column types and auto increment
+> Table column types and auto increment
 
->  ** 4 **  ~~[DELETE INDEX] Query~~ (**Published**) 1.0.22
+> ~~[DELETE INDEX] Query~~ (**Published**) 1.0.22
