@@ -9,6 +9,7 @@
 
 ![](cnu.jpg)
 
+**Step 4**  Enjoy - ready for use
 
 
 ## EXPLAIN QUERIES
