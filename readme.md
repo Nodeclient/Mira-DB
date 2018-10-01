@@ -9,6 +9,7 @@
 
 Mira-DB local & remote Json database server
 *  easy integrate with your existing projects , native apps and etc..
+*  Install 'npm i mira-db'
 ---
 
 ## HELP DOCUMENT
