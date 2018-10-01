@@ -9,7 +9,7 @@
 
 ![](cnu.jpg)
 
-**Step 4**  Enjoy ready your database
+**Step 4**  Enjoy
 > 	  SELECT TABLE Users;
 
 
