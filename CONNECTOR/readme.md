@@ -1,4 +1,4 @@
-### JAVA Connector (app)
+### JAVA Connector 
 
 ```java
     import  org.mira.database.db;
@@ -16,7 +16,7 @@
         */
 ```
 
-### NODE.JS Connector (app)
+### NODE.JS Application Connector
 install request plugin ``` npm i request -g ```
 
 ```js
@@ -29,7 +29,7 @@ install request plugin ``` npm i request -g ```
 ```
 
 
-### PHP Connector (php) 
+### PHP Connector
 
 ```php
 <?php
@@ -39,7 +39,7 @@ install request plugin ``` npm i request -g ```
 ?>
 ```
 
-### DLL Connector (app) 
+### DLL Connector
 
 ```c#
         //IMPORT DLL
@@ -54,7 +54,7 @@ install request plugin ``` npm i request -g ```
         Debug.Log(result);
 ```
 
-### Express Connector (app , html , js) 
+### Express Connector
 
 ```js
     var db = new MiraDB("root","","http://localhost:8123/query","test");      
@@ -63,7 +63,7 @@ install request plugin ``` npm i request -g ```
        });    
 ```
 
-### Socket.IO Connector (app , html , js) 
+### Socket.IO Connector
 
 ```js       
     var db = new MiraDB("root","","127.0.0.1:8123","test");               
