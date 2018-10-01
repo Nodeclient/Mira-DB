@@ -12,6 +12,7 @@
 **Step 4**  Enjoy
 > 	  SELECT TABLE Users;
 
+--------
 
 ## EXPLAIN QUERIES
 
