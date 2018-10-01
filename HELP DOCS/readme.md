@@ -58,7 +58,7 @@
 
 ``` "LIST TABLE"          :  to list table in database ``` 
 
-
+--------
 
 ## EXAMPLE QUERIES
 
@@ -105,7 +105,7 @@
 ``` LIST TABLE <DATABASE_NAME>; ```
 
 
-
+--------
 
 ##  Help file
  + query help for dummies.pdf
