@@ -1,4 +1,4 @@
-### JAVA Connector 
+### JAVA Connector
 
 ```java
     import  org.mira.database.db;
@@ -16,7 +16,7 @@
         */
 ```
 
-### NODE.JS Application Connector
+### NODE.JS Connector
 install request plugin ``` npm i request -g ```
 
 ```js
