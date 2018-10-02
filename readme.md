@@ -8,7 +8,6 @@
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 Mira-DB local & remote Json database server
-*  easy integrate with your existing projects , native apps and etc..
 *  Install `npm i mira-db`
 ---
 
