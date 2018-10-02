@@ -54,7 +54,7 @@ install request plugin ``` npm i request -g ```
         Debug.Log(result);
 ```
 
-### Express Connector
+### Express.js Connector
 
 ```js
     var db = new MiraDB("root","","http://localhost:8123/query","test");      
