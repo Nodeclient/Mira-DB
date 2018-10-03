@@ -104,7 +104,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
    [df12]: <https://github.com/Nodeclient/Mira-DB/tree/master/HELP DOCS/news.md>
    [df11]: <https://github.com/Nodeclient/Mira-DB/tree/master/CONNECTOR>
-   [df10]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (PHP5)>
+   [df10]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (PHP)>
    [df9]: <https://github.com/Nodeclient/Mira-DB/tree/master/HELP DOCS>
    [df8]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (HTML)>
    [df7]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT%20EXAMPLE/Express%20Server%20clients/Example%20Client%20(NODE.JS)>
