@@ -19,7 +19,7 @@ CONNECTOR : [mira_db_connector.jar][4]
         */
 ```
 
-### NODE.JS Client Examples
+### NODE.JS 
 NPM INSTALL :  ```npm i request -g``` <br>
 CONNECTOR   :  [nodejs_express_connector.js][3]
 ```js
@@ -33,7 +33,7 @@ CONNECTOR   :  [nodejs_express_connector.js][3]
 ```
 
 
-### PHP Client Examples
+### PHP 
 CONNECTOR : [miradb_php_connector.php][2]
 ```php
 <?php
@@ -44,7 +44,7 @@ CONNECTOR : [miradb_php_connector.php][2]
 ?>
 ```
 
-### DLL Client Examples
+### DLL 
 CONNECTOR : [MIRA.dll][6]
 ```c#
         /*Client Examples*/
@@ -57,7 +57,7 @@ CONNECTOR : [MIRA.dll][6]
         Debug.Log(result);
 ```
 
-### Express.js Client Examples
+### Express.js 
 CONNECTOR : [miradb.express.1.0.1.js][5]
 ```js
     /*Client Examples*/
@@ -67,7 +67,7 @@ CONNECTOR : [miradb.express.1.0.1.js][5]
        });    
 ```
 
-### Socket.IO Client Examples
+### Socket.IO 
 CONNECTOR :  [miradb.socket.1.0.1.js][1]
 ```js    
     /*Client Examples*/   
