@@ -45,16 +45,26 @@ CONNECTOR : [miradb_php_connector.php][2]
 ```
 
 ### [DLL][61] 
-CONNECTOR : [MIRA.dll][6]
+CONNECTOR : [MIRA 1.0.1][6]
 ```c#
         /*Client Examples*/
-        MIRA.database db = new MIRA.database();
-        db.User = "root";
-        db.Password = "";
-        db.Database = "test";
-        db.Server = "http://localhost:8123/query";
-        string result = db.Query("select table person");
-        Debug.Log(result);
+            MIRA.database db = new MIRA.database();
+            db.User = "root";
+            db.Password = "";
+            db.Database = "test";
+            db.Server = "http://localhost:8123/query";
+
+                String result = db.Query("select table person"); // DATABASE QUERY
+                ArrayList data = db.row(result); // DATABASE QUERY
+                int count = data.Count; // RECORD COUNT
+  
+            Debug.Log( count ); //Total Record Count <number>;
+            Debug.Log( data[1]["col1"] );//Select Row Index -> data[<INDEX>][<COLUMN_NAME>]; 
+
+            foreach ( dynamic value in data) {
+                //List All Rows -> value[<COLUMN_NAME>]
+                Debug.Log( value["col1"] ,value["col2"] ,value["col3"]  );
+            }
 ```
 
 ### [Express.js][51]
@@ -79,12 +89,12 @@ CONNECTOR :  [miradb.socket.1.0.1.js][1]
 ```
 
 
-[1]: Socket/miradb.socket.1.0.1.js "miradb.socket.1.0.1.js"
-[2]: PHP/miradb_php_connector.php "miradb_php_connector.php"
-[3]: Nodejs/nodejs_express_connector.js "nodejs_express_connector.js"
-[4]: java/mira_db_connector.jar "mira_db_connector.jar"
-[5]: Express/miradb.express.1.0.1.js "miradb.express.1.0.1.js"
-[6]: DLL/MIRA.dll "MIRA.dll"
+[1]: Socket/ "miradb.socket.1.0.1.js"
+[2]: PHP/ "miradb_php_connector.php"
+[3]: Nodejs/ "nodejs_express_connector.js"
+[4]: java/ "mira_db_connector.jar"
+[5]: Express/ "miradb.express.1.0.1.js"
+[6]: DLL/ "MIRA.dll"
 
 [11]: Socket/ "miradb.socket.1.0.1.js"
 [21]: PHP/ "miradb_php_connector.php"
