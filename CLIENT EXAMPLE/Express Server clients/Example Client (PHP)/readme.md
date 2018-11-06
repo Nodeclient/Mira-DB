@@ -1,5 +1,5 @@
 
-### PHP Connector
+### First include (PHP) connector
 [miradb_php_connector.php](https://git.io/fpvi3 ".php")
 
 ```php
