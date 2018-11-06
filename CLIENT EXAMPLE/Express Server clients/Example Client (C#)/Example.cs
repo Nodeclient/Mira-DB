@@ -1,7 +1,5 @@
 namespace WindowsFormsApplication1
 {
-
-
     public partial class Form1 : Form
     {
         public Form1()
@@ -25,11 +23,15 @@ namespace WindowsFormsApplication1
             if (result != "Connection Error!") {
                 ArrayList data = db.row(result);
                 int count = data.Count;
-
-                textBox1.Text += "TOTAL RECORD : (" + count +")"+ System.Environment.NewLine;
+                
+                //Select Row Index -> data[<INDEX>][<COLUMN_NAME>]; 
+                textBox1.Text += "List INDEX=2 : " +data[2]["col1"] + System.Environment.NewLine; 
+                // Show total record count <number>
+                textBox1.Text += "TOTAL RECORD : (" + count +")" + System.Environment.NewLine;
 
                 foreach (dynamic value in data) {
-                    textBox1.Text += value["col1"] + System.Environment.NewLine;
+                    //List All Rows -> value[<COLUMN_NAME>]
+                    textBox1.Text += value["col1"] + value["col2"] + value["col3"] + System.Environment.NewLine;
                 }
 
             } else {
