@@ -1,7 +1,6 @@
 #### Java Example
 
-	Download external library (org.mira.database.db) 
-[mira_db_connector.jar](https://git.io/fpvob "[GITHUB]")
+	Download external library (org.mira.database.db) [mira_db_connector.jar](https://git.io/fpvob "[GITHUB]")
 
 ```js
     /*Client Examples*/
