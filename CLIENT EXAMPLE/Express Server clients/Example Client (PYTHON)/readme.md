@@ -4,7 +4,7 @@
 More Information
 http://docs.python-requests.org/en/latest/user/install/#install
 
-### Ecample Client
+### Example Client
 ```py
   import requests
   res = requests.post("http://localhost:8123/query", data={'user': 'root', 'pass': '', 'db': 'test','query':'select table person'})
