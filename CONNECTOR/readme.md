@@ -54,8 +54,8 @@ CONNECTOR : [MIRA 1.0.1][6]
             db.Database = "test";
             db.Server = "http://localhost:8123/query";
 
-                String result = db.Query("select table person"); // DATABASE QUERY
-                ArrayList data = db.row(result); // DATABASE QUERY
+                String result = db.Query("select table person"); // Database Query
+                ArrayList data = db.row(result); // Return
                 int count = data.Count; // RECORD COUNT
   
             Debug.Log( count ); //Total Record Count <number>;
