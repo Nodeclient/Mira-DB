@@ -4,7 +4,7 @@
 * MiraDB_Uniy_Engine_Connector(DLL).unitypackage -  (**WINDOWS**)
 * MiraDB_Uniy_Engine_Connector(NO DLL).unitypackage - (**ALL OS**)
 
-### IMPORT "MIRA.DLL"
+### IMPORT "MIRA.DLL > 1.0.0"
 ```c#
        // IMPORT REFERANCE  -> [GITHUB]/Mira-DB/CONNECTOR/DLL/MIRA.dll
        MIRA.database db = new MIRA.database();
