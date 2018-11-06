@@ -7,11 +7,11 @@
 ## Example Code
 
 ```cs
- MIRA.database db = new MIRA.database(); // MIRA.DLL
-                db.User = "root"; //USER NAME
-                db.Password = ""; //USER PASSWORD
-                db.Database = "test"; //DATABASE NAME
-                db.Server = "http://localhost:8123/query"; //DB SERVER ADRESS
+             MIRA.database db = new MIRA.database(); // MIRA.DLL
+                  db.User = "root"; //USER NAME
+                  db.Password = ""; //USER PASSWORD
+                  db.Database = "test"; //DATABASE NAME
+                  db.Server = "http://localhost:8123/query"; //DB SERVER ADRESS
 
 
             String result = db.Query("select table person"); //QUERY
