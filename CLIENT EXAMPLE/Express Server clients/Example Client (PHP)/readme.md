@@ -1,7 +1,8 @@
 
-### First include (PHP) connector
+### Include (PHP) connector
 [miradb_php_connector.php](https://git.io/fpvi3 ".php")
 
+### Example Client
 ```php
     <?php
         include 'miradb_php_connector.php';
