@@ -1,4 +1,4 @@
-# Mira Json Database Server
+# Mira Database Server
 
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
@@ -7,17 +7,17 @@
 [![Known Vulnerabilities](https://snyk.io/test/npm/mira-db/badge.svg)](https://snyk.io/test/npm/mira-db)
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-Mira-DB local & remote Json database server
+Mira-DB local & remote database server
 *  Install `npm i mira-db`
 ---
 
-## HELP DOCUMENT
+## Help documentation
 * [Help Document][df9]
 
-## SOURCES
+## Example client & server
 
 * [EXPRESS][df1]    **SERVER (recommend)**
-* [SOCKET.IO][df2]  **SERVER**  
+* [SOCKET.IO][df2]  **SERVER (legacy)**  
 
 * [NODEJS][df7]      CLIENT 
 * [UNITY5][df5]      CLIENT 
@@ -27,15 +27,17 @@ Mira-DB local & remote Json database server
 * [C#][df3]          CLIENT 
 * [JQUERY][df8]      CLIENT 
   
-## CONNECTOR
+## Connector
 * [CONNECTOR][df11]
 
-# Upcoming Features
+# In development
 * [READ NOW][df12] 
 
 ---
+## Example usage (miradb) > remote_databae
 
-## Nodejs  > custom_server.js
+
+## Example usage (miradb) > local_databae
 
  ```js
     // INCLUDE MIRA
@@ -62,12 +64,12 @@ Mira-DB local & remote Json database server
     var query = 'SELECT TABLE person';
 ```
 ```js    
-    // RESULT METHOD (EXAMPLE) 1
+    // METHOD (EXAMPLE 1)
     var result = mydb.Query(query,My_db_name,perms);
     console.log(  result );
 ```  
 ```js    
-    // RESULT METHOD (EXAMPLE) 2
+    // METHOD (EXAMPLE 2) 
     mydb.Query(query,My_Db_name,perms ,function(result){
       console.log(  result );
     });           
@@ -75,9 +77,9 @@ Mira-DB local & remote Json database server
 
 
 -----
-## Nodejs  > Backup.js
+## Check this project for backup
 * More Detail : https://github.com/Nodeclient/install-make
-
+-----
 
 ## License MIT
 
@@ -102,18 +104,18 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-   [df12]: <https://github.com/Nodeclient/Mira-DB/tree/master/HELP DOCS/news.md>
-   [df11]: <https://github.com/Nodeclient/Mira-DB/tree/master/CONNECTOR>
-   [df10]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (PHP)>
-   [df9]: <https://github.com/Nodeclient/Mira-DB/tree/master/HELP DOCS>
-   [df8]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (HTML)>
-   [df7]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT%20EXAMPLE/Express%20Server%20clients/Example%20Client%20(NODE.JS)>
-   [df6]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (java)>
-   [df5]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (UNITY5 GAME ENGINE)>
-   [df4]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (PYTHON)>
-   [df3]: <https://github.com/Nodeclient/Mira-DB/tree/master/CLIENT EXAMPLE/Express Server clients/Example Client (C%23)>
-   [df2]: <https://github.com/Nodeclient/Mira-DB/tree/master/SERVER EXAMPLE/Remote Database (socket.io Server)>
-   [df1]: <https://github.com/Nodeclient/Mira-DB/tree/master/SERVER EXAMPLE/Remote Database (express Server)>
+   [df12]: <https://git.io/fpUf2>
+   [df11]: <https://git.io/fpUfB>
+   [df10]: <https://git.io/fpUfl>
+   [df9]: <https://git.io/fpUfc>
+   [df8]: <https://git.io/fpUfY>
+   [df7]: <https://git.io/fpUfm>
+   [df6]: <https://git.io/fpUft>
+   [df5]: <https://git.io/fpUvp>
+   [df4]: <https://git.io/fpUvy>
+   [df3]: <https://git.io/fpUvE>
+   [df2]: <https://git.io/fpUvl>
+   [df1]: <https://git.io/fpvol>
    [npm-image]: https://img.shields.io/npm/v/mira-db.svg?style=flat
    [npm-url]: https://npmjs.org/package/mira-db
    [downloads-image]: https://img.shields.io/npm/dm/mira-db.svg?style=flat
