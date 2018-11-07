@@ -14,7 +14,6 @@
 **Step 4** Fetch a result row
 >   SELECT TABLE Users;
 
-**Step 5** Enjoy!
 --------
 
 ## EXPLAIN QUERIES
