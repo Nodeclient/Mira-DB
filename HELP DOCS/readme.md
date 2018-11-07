@@ -1,17 +1,19 @@
 ## Creating New Database & Table
+
 **Step 1**  Creat a new storage folder -> ```example (c:/databases)```
+>   Set veriable :  var DB_DIR = "c:/databases";
+**Step 2**  Creat a new database  
+>   CREATE DATABASE Login ;
 
-**Step 2**  Creat a new database in storage folder  
-> 	 CREATE DATABASE Login ;
-
-**Step 3**  Creat a new table (**Users**) in database (**Login**)
-> 	  CREATE TABLE Users COLUMN ["username","password","email"] VALUE ["leo","1234","leo.zacharry@example.com"];
+**Step 3**  Creat a new table in database
+>   CREATE TABLE Users COLUMN ["username","password","email"] VALUE ["leo","1234","leo.zacharry@example.com"];
 
 ![](cnu.jpg)
 
-**Step 4**  Enjoy
-> 	  SELECT TABLE Users;
+**Step 4** Fetch a result row
+>   SELECT TABLE Users;
 
+**Step 5** Enjoy!
 --------
 
 ## EXPLAIN QUERIES
