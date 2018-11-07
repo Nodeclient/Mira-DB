@@ -1,4 +1,4 @@
-### Upcoming Features
+### Next Updates
 
 >  MiraDB database admin (web interface)
 
@@ -8,4 +8,4 @@
 
 > Table column types and auto increment
 
-> ~~[DELETE INDEX] Query~~ (**Published**) 1.0.22
+> ~~[DELETE INDEX] New (delete) Statement ~~ (**Published**) 1.0.22
