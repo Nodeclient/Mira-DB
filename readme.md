@@ -34,8 +34,7 @@ Mira-DB local & remote database server
 * [READ NOW][df12] 
 
 ---
-## Example usage (miradb) > remote_databae
-* [REMOTE DATABASE][df13] 
+
 ## Example usage (miradb) > local_databae
 
  ```js
