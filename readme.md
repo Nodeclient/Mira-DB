@@ -35,7 +35,7 @@ Mira-DB local & remote database server
 
 ---
 
-## Example usage (miradb) > local_databae
+## Example usage > (Local Database)
 
  ```js
     // INCLUDE MIRA
