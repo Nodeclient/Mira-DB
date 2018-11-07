@@ -2,6 +2,7 @@
 
 **Step 1**  Creat a new storage folder -> ```example (c:/databases)```
 >   Set veriable :  var DB_DIR = "c:/databases";
+
 **Step 2**  Creat a new database  
 >   CREATE DATABASE Login ;
 
