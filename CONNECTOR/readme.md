@@ -54,16 +54,15 @@ CONNECTOR : [MIRA 1.0.1][6]
             db.Database = "test";
             db.Server = "http://localhost:8123/query";
 
-                String result = db.Query("select table person"); // Database Query
+                String result = db.Query("select table person"); // Query
                 ArrayList data = db.row(result); // Return
-                int count = data.Count; // RECORD COUNT
+                int count = data.Count; // total record
   
-            Debug.Log( count ); //Total Record Count <number>;
-            Debug.Log( data[1]["col1"] );//Select Row Index -> data[<INDEX>][<COLUMN_NAME>]; 
+            Debug.Log( count ); 
+            Debug.Log( data[1]["col1"] ); // Select Index Row -> data[<INDEX>][<COLUMN_NAME>]; 
 
             foreach ( dynamic value in data) {
-                //List All Rows -> value[<COLUMN_NAME>]
-                Debug.Log( value["col1"] ,value["col2"] ,value["col3"]  );
+                Debug.Log( value["col1"] ,value["col2"] ,value["col3"]  ); // List All Rows -> value[<COLUMN_NAME>]
             }
 ```
 
