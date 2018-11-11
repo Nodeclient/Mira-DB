@@ -6,4 +6,4 @@
 
 > Table column types and auto increment
 
-> ~~[DELETE INDEX] New (delete) Statement ~~ (**Published**) 1.0.22
+~~ New Statement (delete index) ~~ (**Published**) 1.0.22
