@@ -1,5 +1,6 @@
 ## Web Admin Interface
-    web admin feature be coming very soon
+
+[web_admin_public.zip][wf1]
 
 
 ![](./1.png)
@@ -10,3 +11,5 @@
 
 ![](./4.jpg)
  
+
+[wf1]: <https://git.io/no>
