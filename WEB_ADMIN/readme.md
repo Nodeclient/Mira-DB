@@ -12,10 +12,12 @@
 * unrar -> public_web_admin.tar.gz
 	
 **ADMIN INTERFACE (URL)**
+
 	http:127.0.0.1:8123/
 
 
 **ADMIN INTERFACE (SCREEN)**
+
 ![](./1.png)
 
 ![](./2.jpg)
