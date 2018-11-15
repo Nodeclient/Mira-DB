@@ -1,13 +1,13 @@
 ## Web Admin Interface
 **LINUX INSTALL**
 
-	cd MiraDB/publish
+	cd /home/MiraDB/publish
 	wget https://github.com/Nodeclient/Mira-DB/raw/master/WEB_ADMIN/public_web_admin.tar.gz
 	tar xvzf public_web_admin.tar.gz
 	
 **WINDOWS INSTALL**
 
-* cd MiraDB/publish
+* cd c:/MiraDB/publish
 * [Download Web Admin](https://github.com/Nodeclient/Mira-DB/raw/master/WEB_ADMIN/public_web_admin.tar.gz "dgf")
 * unrar -> public_web_admin.tar.gz
 	
