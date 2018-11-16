@@ -1,4 +1,4 @@
-## Web Admin Interface
+## Database Admin Interface
 **LINUX INSTALL**
 
 	cd /home/MiraDB/publish
