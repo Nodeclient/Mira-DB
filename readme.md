@@ -14,6 +14,9 @@ Mira-DB local & remote database server
 ## Help documentation
 * [Help Document][df9]
 
+## Simple Database Admin
+* [Admin Web Interface][df14]
+
 ## Example client & server
 
 * [EXPRESS][df1]    **SERVER (recommend)**
@@ -101,7 +104,7 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+   [df14]: <https://git.io/fpZzH>
    [df13]: <https://git.io/fpUJK>
    [df12]: <https://git.io/fpUf2>
    [df11]: <https://git.io/fpUfB>
