@@ -4,13 +4,13 @@ MIRA DATABASE ``` INSTALL ``` [EXPRESS SERVER](https://git.io/fpvol "SERVER")
 
 **DB ADMIN LINUX INSTALL**
 
-	cd /home/MiraDB/publish
+	cd /home/miradb/public
 	wget https://github.com/Nodeclient/Mira-DB/raw/master/WEB_ADMIN/public_web_admin.tar.gz
 	tar xvzf public_web_admin.tar.gz
 	
 **DB ADMIN WINDOWS INSTALL**
 
-* cd c:/MiraDB/publish
+* cd c:/miradb/public
 * [Download Web Admin](https://github.com/Nodeclient/Mira-DB/raw/master/WEB_ADMIN/public_web_admin.tar.gz "dgf")
 * unrar -> public_web_admin.tar.gz
 	
