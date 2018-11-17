@@ -7,9 +7,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/npm/mira-db/badge.svg)](https://snyk.io/test/npm/mira-db)
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-Mira-DB local & remote database server
-*  Install `npm i mira-db`
----
+Mira-DB local & remote database
 
 ## Help documentation
 * [Help Document][df9]
