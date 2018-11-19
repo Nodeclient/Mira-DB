@@ -13,7 +13,7 @@ Mira-DB local & remote database
 * [Help Document][df9]
 
 ## Simple database admin
-* [Admin Web Interface][df14]
+* [Download web Interface][df14]
 
 ## Example client & server
 
