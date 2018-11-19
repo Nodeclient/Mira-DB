@@ -7,7 +7,8 @@ MIRA DATABASE ``` INSTALL ``` [EXPRESS SERVER](https://git.io/fpvol "SERVER")
 * cd /home/miradb/public
 * sudo wget https://github.com/Nodeclient/Mira-DB/raw/master/WEB_ADMIN/public_web_admin.tar.gz
 * sudo tar xvzf public_web_admin.tar.gz
-	
+* Delete after extraction -> "public_web_admin.tar.gz"
+
 **WINDOWS INSTALL**
 
 * cd c:/miradb/public
