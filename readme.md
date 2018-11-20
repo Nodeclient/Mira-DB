@@ -18,7 +18,6 @@ Mira-DB local & remote database
 ## Example client & server
 
 * [EXPRESS][df1]    **SERVER (recommend)**
-* [SOCKET.IO][df2]  **SERVER (legacy)**  
 
 * [NODEJS][df7]      CLIENT 
 * [UNITY5][df5]      CLIENT 
