@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Express-Admin</title>
+	<link rel="stylesheet" type="text/css" href="./themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="./themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="./css/demo.css">
+	<link rel="stylesheet" type="text/css" href="./css/loader.css">
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="./mira_js_1.0/miradb.express.1.0.1.js"></script>
+	<script type="text/javascript" src="./mira_js_1.0/build_tree.js"></script>
+	<script type="text/javascript" src="./mira_js_1.0/db_login.js"></script>
+	<script type="text/javascript" src="./mira_js_1.0/main_win.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="noselect">
+	<h2>MiraDB</h2>
+	<p>Express Web Admin - v1.0.01</p>
+
+	<!--LOGIN BG-->
+	<div id="background">
+		<img src="themes/background/bg.jpg" class="stretch" alt="" />
+	</div>
+	<!--LOGIN BG-->
+		
+	<!--LOGIN FRORM-->
+	<div id="dlg" class="easyui-dialog noselect" title=" Database Admin" data-options="
+				iconCls:'icon-mira',
+				closable:false,
+				modal:true,
+				buttons: [{
+					text:'Connect',
+					iconCls:'icon-ok',
+					handler:function(){
+						LoginDB('LOGIN');
+					}
+	}]" style="width:350px;height:280px;padding:5px">
+						<p><input id="dbid" type="text" name="username" class="easyui-textbox" data-options="prompt:'USER'" value="root" style="width:180px;"/></p>
+						<p><input id="dbpass" type="text" name="password" class="easyui-passwordbox" data-options="prompt:'PASSWORD'"  style="width:180px;"/></p>
+						<p><input id="dbserv" type="text" name="dserver" class="easyui-textbox" value="localhost:8123" data-options="prompt:'SERVER',iconCls:'icon-serv'"  style="width:210px;" /></p>
+						<p>
+							<label class="remember_me">
+								<input name="rememberMe" type="checkbox"/> Remember
+							</label>
+						</p>
+
+	</div>
+	<!--LOGIN FRORM-->
+
+	<!--TABLE FRORM-->
+		<div id="tbldlg" class="easyui-dialog" style="width:650px;height:500px;padding:5px" data-options="iconCls: 'icon-tbl', modal:false,resizable:true , closed: true,cache:false">
+		<table id="dg"  toolbar="#dlg-toolbar"  style="width:100%;height:100%;" data-options="fitColumns:true,rownumbers:true,singleSelect:true"> </table>
+		<div id="dlg-toolbar">
+			<a href="#"  id="addbtn" class="easyui-linkbutton" iconCls="icon-add" plain="true" >Add</a>
+			<a href="#"  id="editbtn" class="easyui-linkbutton" iconCls="icon-edit" plain="true"  >Edit</a>
+			<a href="#"  id="rembtn" class="easyui-linkbutton" iconCls="icon-remove" plain="true" >Remove</a>
+			<a href="#"  id="dropbtn" class="easyui-linkbutton" iconCls="icon-no" plain="true" >DROP TABLE</a>
+		 </div>
+	</div>
+	<!--TABLE FRORM-->
+
+	<!--DB EDITOR-->
+		<div id="w" class="easyui-window" title=" Mira Admin" data-options="iconCls:'icon-mira', minimizable:false, collapsible:false, closable:false, resizable:false, footer:'#footer'" style="width:850px;height:510px;padding:5px;">
+			<div class="easyui-layout" data-options="fit:true">						
+				<div  data-options="region:'east',split:true" style="width:220px;padding:5px;color:#000;">
+				<!--<Tree>-->
+					<ul id="tree" class="easyui-tree" data-options="method:'get',animate:false,lines:true"></ul>
+				<!--<Tree>-->
+				</div>						
+		<div data-options="region:'center'" style="padding:0px;">
+
+			<!--<Edit ROW >-->
+					<div id="editrow" class="easyui-dialog" title="New" style="width:500px;height:350px;" data-options=" resizable:true ,modal:true, closed: true, buttons: [{ text:'SAVE', iconCls:'icon-save', handler:function(){ EDIT_BTN(); }}]">
+						<div style="margin-bottom:5px;padding:5px 5px;">
+							<table id="edittbr" class="easyui-propertygrid" style="width:100%;" data-options="method:'get',showGroup:false,rownumbers:false,idField:'cpr',scrollbarSize:0"></table>
+						</div>
+					</div>
+			<!--<Edit ROW >-->
+
+			<!--<ADD ROW >-->
+					<div id="Addrow" class="easyui-dialog" title="New" style="width:500px;height:350px;" data-options=" resizable:true ,modal:true, closed: true, buttons: [{ text:'ADD NEW', iconCls:'icon-add', handler:function(){ ADD_ROW_BTN(); }}]">
+							<div style="margin-bottom:5px;padding:5px 5px;">
+								<table id="Addrowr" class="easyui-propertygrid" style="width:100%;" data-options="method:'get',showGroup:false,rownumbers:false,idField:'cpr',scrollbarSize:0"></table>
+							</div>
+						</div>
+			<!--<ADD ROW >-->
+
+			<!--<Dialog New Table >-->
+				<div id="newtbl" class="easyui-dialog"  style="width:600px;height:450px" data-options=" resizable:true ,modal:true, closed: true, buttons: [{ text:'Add new table', iconCls:'icon-ok', handler:function(){ ADD_BTN(); }}]">
+				<div style="margin-bottom:5px;padding:5px 5px;">
+				<input id="tblnam" class="easyui-textbox" data-options="label: 'Table name', labelPosition: 'top',iconCls:'icon-tbl',prompt:'Table'" style="width:40%;">	
+				<input id="tblcol" class="easyui-textbox" style="width:40%;" data-options="
+										label: 'Add a field', labelPosition: 'top',prompt: 'Column',iconWidth: 22,  fitColumns:true,
+										icons: [{
+											iconCls:'icon-add',
+											handler: function(e){
+												ADD_COL();
+												$(e.data.target).textbox('clear');
+											}
+										},{
+											iconCls:'icon-remove',
+											handler: function(e){
+												DEL_COL();
+												$(e.data.target).textbox('clear');
+											}}]
+									">
+									<br><br>
+						<table id="fpg" class="easyui-propertygrid" style="width:98%;" data-options="method:'get',showHeader:true,showGroup:false,rownumbers:false,scrollbarSize:0"></table>
+					</div>
+					</div>
+					<!--<Dialog New Table >-->
+
+					<!--<tab main>-->
+					<div id="tab"  class="easyui-tabs" data-options="tools:'#tab-tools',fit:true" >
+
+					<!--<MAIN TAB >-->
+						<div title="Main" data-options="    tools:[{
+							iconCls:'icon-mini-refresh',
+							handler:function(){
+								BUILD_MSG('iconQueryYes', 'Tab Reloaded..');
+								BUILD_TREE();
+							}
+						}]" style="padding:10px;">
+						<!--<Creat DB>-->
+						<div class="ftitle">Create a new database</div>
+						<div style="padding:5px 0;">
+							<input id ="ndbtx" class="easyui-textbox" data-options="iconCls:'icon-db',prompt:'DB NAME'" style="width:250px">
+						</div>
+						
+						<div style="padding:5px 0;">
+							<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add',disabled:false" onclick="NEW_DB();"  >Create new database</a>
+						</div>
+						<!--<Creat DB>-->
+						<br>
+						<!--<Creat TBL>-->
+						<div class="ftitle">Creat Table & Drop DB</div>
+						<!--<SELECT DB>-->
+						<div style="padding:5px 0;">
+							<div id="sldb" class="easyui-datalist" title="Select Database" style="width:320px;height:180px" data-options="lines: true, method: 'get'"></div>
+						</div>
+						<!--<SELECT DB>-->
+						<div style="padding:5px 5px;">
+							<a href="#" id="ctbl" class="easyui-linkbutton" data-options="iconCls:'icon-tbl',disabled:false" onclick="opendlG();">Create new table</a>
+							<a href="#" id="crem" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" onclick="REM_DB();" >Remove database</a>
+						</div>
+						<!--<Creat TBL>-->
+						</div>
+					<!--<MAIN TAB >-->
+					<!--<QUERY TAB>-->
+					<div title="Custom Query" style="padding:10px;">
+
+							<!--<query>-->
+							<div data-options="region:'south',border:false" style="text-align:left;padding:2px 2px 5px;size:12px">
+								<div style="margin-bottom:0px">
+									<input id="inptxt" class="easyui-textbox" data-options="iconCls:'icon-query',iconWidth:28,prompt:'SELECT TABLE EXAMPLE;'" style="width:100%;height:40px;">
+								</div>
+							</div>
+							<!--<query>-->
+
+							<div style="margin-bottom:10px">
+									<input id="outtxt" class="easyui-textbox"  multiline="true" value="console log" style="width:100%; height:320px;">
+							</div>
+					</div>
+					<!--<QUERY TAB>-->
+					</div>
+					<!--<tab main>-->
+				</div>
+			</div>
+		<!--<footer>-->
+		<div id="footer" style="color:#000; padding:5px;"> Mira Database Web Admin</div>
+		<!--<footer>-->
+		</div>
+	<!--DB EDITOR-->
+
+<!--TAB TOOL-->
+    <div id="p-tools">
+        <a href="javascript:void(0)" class="icon-mini-add" onclick="alert('add')"></a>
+        <a href="javascript:void(0)" class="icon-mini-edit" onclick="alert('edit')"></a>
+        <a href="javascript:void(0)" class="icon-mini-refresh" onclick="alert('refresh')"></a>
+	</div>
+<!--TAB TOOL-->
+
+</body>
+<script type="text/javascript" src="./mira_js_1.0/app.js"></script>    
+<script type="text/javascript" src="./js/datagrid-filter.js"></script>
+<script type="text/javascript" src="./js/datagrid-cellediting.js"></script>
+</html>
