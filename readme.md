@@ -10,10 +10,10 @@
 Mira-DB local & remote database
 
 ## Help documentation
-* [Help Document][df9]
+* [DOCUMENTS][df9]
 
 ## Simple database admin
-* [Download web Interface][df14]
+* [DOWNLOAD WEB ADMIN][df14]
 
 ## Example client & server
 
