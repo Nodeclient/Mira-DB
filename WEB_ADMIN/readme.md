@@ -17,7 +17,7 @@
 	
 **WEB INTERFACE**
 
-	http:127.0.0.1:8123/
+	http://127.0.0.1:8123/
 
 
 **INTERFACE (SCREEN)**
