@@ -31,6 +31,18 @@ npm install body-parser
  Create a new confing file
   	user.conf
 ```
+
+---
+
+### RUN DATABASE
+``` 
+Linux
+sudo node mira_express_database.js
+
+Windows
+node mira_express_database.js
+```
+
 ### QUERY (GET,POST)
 ``` 
 http://localhost:8123/query 
@@ -38,17 +50,6 @@ http://localhost:8123/query
 ### PUBLIC HTTP
 ``` 
 http://localhost:8123
-```
-
----
-
-### RUN DB APP
-``` 
-Linux
-sudo node mira_express_database.js
-
-Windows
-node mira_express_database.js
 ```
 
 ### SIMPLE DATABASE ADMIN (optional) ## 
