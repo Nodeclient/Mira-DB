@@ -1,4 +1,4 @@
-## MIRA-DB EXPRESS DATABASE (INSTALL)
+## MIRA-DB EXPRESS DATABASE (INSTALL INFORMATION)
 ---
 ### 1) INSTALL MIRA
 ``` 
@@ -23,7 +23,14 @@ npm install body-parser
 
  var DB_DIR = "./your_storage_folder"; 
 ```
-
+### CREATE SETTING FILES ## 
+```js
+ Create a new .perm file
+ <yourname>.perm
+ 
+ Create a new confing file
+  	user.conf
+```
 ### QUERY (GET,POST)
 ``` 
 http://localhost:8123/query 
@@ -31,6 +38,17 @@ http://localhost:8123/query
 ### PUBLIC HTTP
 ``` 
 http://localhost:8123
+```
+
+---
+
+### RUN DB APP
+``` 
+Linux
+sudo node mira_express_database.js
+
+Windows
+node mira_express_database.js
 ```
 
 ### SIMPLE DATABASE ADMIN (optional) ## 
