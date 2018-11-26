@@ -15,8 +15,8 @@
     public function query($q){
         set_error_handler(
             create_function(
-                '$severity, $message, $file, $line',
-                'throw new ErrorException($message, $severity, $severity, $file, $line);'
+                '$message',
+                'throw new Exception($message);'
             )
         );
             try {
@@ -25,7 +25,7 @@
                         return  file_get_contents( $this->_Server , false, stream_context_create($Post_String));
             }
                 catch (Exception $e) {
-                        return "Connection Failed.. CODE:" . $e->getCode();
+                        return "Connection Failed! Error Code :" . $e->getCode();
                 }
         restore_error_handler();
     }
