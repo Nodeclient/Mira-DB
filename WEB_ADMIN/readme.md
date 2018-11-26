@@ -1,6 +1,6 @@
 ## Mira simple database admin Interface
 
-MIRA DATABASE ``` INSTALL ``` [EXPRESS SERVER](https://git.io/fpvol "SERVER")
+``` INSTALL FIRST ``` [EXPRESS SERVER](https://git.io/fpvol "SERVER")
 
 **LINUX INSTALL**
 
