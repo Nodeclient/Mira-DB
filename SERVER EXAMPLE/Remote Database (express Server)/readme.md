@@ -57,7 +57,7 @@ http://localhost:8123
 
 ---
 
-## HOW TO USE (Install help)
+## HOW TO USE
 ```
 https://www.youtube.com/watch?v=5snf1J9pZak
 
