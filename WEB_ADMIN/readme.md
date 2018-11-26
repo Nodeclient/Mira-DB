@@ -1,4 +1,4 @@
-## Mira simple database admin Interface
+## MiraDB simple database admin
 
 ``` INSTALL FIRST ``` [EXPRESS SERVER](https://git.io/fpvol "SERVER")
 
