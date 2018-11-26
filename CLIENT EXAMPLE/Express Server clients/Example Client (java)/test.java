@@ -3,7 +3,7 @@ import  org.mira.database.db;
 
 public class Test {
  public static void main(String[] args)  {
-	 // FIRST ADD EXTERNAL JAR -> [GITHUB]Mira-DB/CONNECTOR/java
+	 // ADD FIRST LIBRARY -> [GITHUB]Mira-DB/CONNECTOR/java
 	 db Conn = new db();
 	
 	   	   Conn.user="root";
