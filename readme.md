@@ -12,7 +12,7 @@ Mira-DB local & remote database
 ## Help documentation
 * [DOCUMENTS][df9]
 
-## Releases download
+## Releases & download
 
 * [MIRA-DB][df15]
 * [SIMPLE WEB ADMIN][df14]
@@ -29,7 +29,7 @@ Mira-DB local & remote database
 * [C#][df3]          CLIENT 
 * [JQUERY][df8]      CLIENT 
   
-## Connector
+## Connector & library
 * [CONNECTOR][df11]
 
 # In development
