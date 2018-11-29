@@ -1,6 +1,6 @@
 ## MiraDB simple database admin
 
-``` INSTALL FIRST ``` [EXPRESS SERVER](https://git.io/fpvol "SERVER")
+``` DOWNLOAD ``` [MIRA-DB SERVER](https://git.io/fpabN "SERVER")
 
 **LINUX INSTALL**
 
