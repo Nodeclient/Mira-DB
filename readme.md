@@ -12,8 +12,10 @@ Mira-DB local & remote database
 ## Help documentation
 * [DOCUMENTS][df9]
 
-## Simple database admin
-* [DOWNLOAD WEB ADMIN][df14]
+## Releases download
+
+* [MIRA-DB][df15]
+* [SIMPLE WEB ADMIN][df14]
 
 ## Example client & server
 
@@ -102,7 +104,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-
+   [df15]: <https://git.io/fpabN>
    [df14]: <https://git.io/fpZzH>
    [df13]: <https://git.io/fpUJK>
    [df12]: <https://git.io/fpUf2>
