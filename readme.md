@@ -17,7 +17,7 @@ Mira-DB local & remote database
 * [MIRA-DB][df15]
 * [SIMPLE WEB ADMIN][df14]
 
-## Example client & server
+## Example source codes (client & server) 
 
 * [EXPRESS][df1]    **SERVER (recommend)**
 
