@@ -14,7 +14,7 @@ Mira-DB local & remote database
 
 ## Releases & download
 
-* [MIRA-DB][df15]
+* [MIRADB BINARY][df15]
 * [SIMPLE WEB ADMIN][df14]
 
 ## Example source codes (client & server) 
