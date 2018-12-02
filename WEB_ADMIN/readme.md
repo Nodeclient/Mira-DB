@@ -1,22 +1,18 @@
 ## MiraDB simple database admin
 
-``` DOWNLOAD ``` [MIRA-DB SERVER](https://git.io/fpabN "SERVER")
+[MIRA-DB SERVER](https://git.io/fpKvh "SERVER")
 
 **LINUX INSTALL**
-
 * cd /home/miradb/public
-* sudo wget https://github.com/Nodeclient/Mira-DB/raw/master/WEB_ADMIN/public_web_admin.tar.gz
+* sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/webadmin/public_web_admin.tar.gz
 * sudo tar xvzf public_web_admin.tar.gz
 * sudo rm public_web_admin.tar.gz
 
 **WINDOWS INSTALL**
-
-* cd c:/miradb/public
 * [Download Web Admin](https://github.com/Nodeclient/Mira-DB/raw/master/WEB_ADMIN/public_web_admin.tar.gz "dgf")
-* unrar -> public_web_admin.tar.gz
-	
-**WEB INTERFACE**
+* Copy to c:/miradb/public
 
+**WEB INTERFACE**
 	http://127.0.0.1:8123/
 
 
