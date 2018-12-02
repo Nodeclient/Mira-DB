@@ -1,4 +1,4 @@
-## MiraDB simple database admin
+## Simple database admin
 
 [MIRA-DB SERVER](https://git.io/fpKvh "SERVER")
 
