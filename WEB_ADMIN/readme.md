@@ -9,7 +9,7 @@
 * sudo rm public_web_admin.tar.gz
 
 **WINDOWS INSTALL**
-* [Download Web Admin](https://github.com/Nodeclient/Mira-DB/raw/master/WEB_ADMIN/public_web_admin.tar.gz "dgf")
+* [Download Web Admin](https://github.com/Nodeclient/Mira-DB/releases/download/webadmin/public_web_admin.tar.gz "dgf")
 * Copy to c:/miradb/public
 
 **WEB INTERFACE**
