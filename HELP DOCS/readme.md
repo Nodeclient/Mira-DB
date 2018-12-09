@@ -1,22 +1,3 @@
-## Creating New Database & Table
-
-**Step 1**  Creat a new storage folder -> ```example (c:/databases)```
-
-**Step 2**  set "DB_DIR" variable -> ```line:8```
-> var DB_DIR = "c:/databases";
-
-**Step 3**  Creat a new database  
->   CREATE DATABASE Login ;
-
-**Step 4**  Creat a new table in database
->   CREATE TABLE Users COLUMN ["username","password","email"] VALUE ["leo","1234","leo.zacharry@example.com"];
-
-![](cnu.jpg)
-
-**Step 5** Fetch result rows
->   SELECT TABLE Users;
-
---------
 
 ## EXPLAIN QUERIES
 
