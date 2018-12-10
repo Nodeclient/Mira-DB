@@ -7,7 +7,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/npm/mira-db/badge.svg)](https://snyk.io/test/npm/mira-db)
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-Mira-DB local & remote database
+MiraDB is open source (OODBMS) object oriented database management system that uses regular expression queries 
 
 ## Help documentation
 * [DOCUMENTS][df9]
@@ -16,24 +16,6 @@ Mira-DB local & remote database
 
 * [MIRADB BINARY][df15]
 * [SIMPLE WEB ADMIN][df14]
-
-## Example source codes (client & server) 
-
-* [EXPRESS][df1]    **SERVER (recommend)**
-
-* [NODEJS][df7]      CLIENT 
-* [UNITY5][df5]      CLIENT 
-* [PYTHON][df4]      CLIENT
-* [PHP][df10]        CLIENT
-* [JAVA][df6]        CLIENT 
-* [C#][df3]          CLIENT 
-* [JQUERY][df8]      CLIENT 
-  
-## Connector & library
-* [CONNECTOR][df11]
-
-# In development
-* [READ NOW][df12] 
 
 ---
 
@@ -106,19 +88,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
    [df15]: <https://git.io/fpabN>
    [df14]: <https://git.io/fpZzH>
-   [df13]: <https://git.io/fpUJK>
-   [df12]: <https://git.io/fpUf2>
-   [df11]: <https://git.io/fpUfB>
-   [df10]: <https://git.io/fpUfl>
    [df9]: <https://git.io/fpUfc>
-   [df8]: <https://git.io/fpUfY>
-   [df7]: <https://git.io/fpUfm>
-   [df6]: <https://git.io/fpUft>
-   [df5]: <https://git.io/fpUvp>
-   [df4]: <https://git.io/fpUvy>
-   [df3]: <https://git.io/fpUvE>
-   [df2]: <https://git.io/fpUvl>
-   [df1]: <https://git.io/fpvol>
+
    [npm-image]: https://img.shields.io/npm/v/mira-db.svg?style=flat
    [npm-url]: https://npmjs.org/package/mira-db
    [downloads-image]: https://img.shields.io/npm/dm/mira-db.svg?style=flat
