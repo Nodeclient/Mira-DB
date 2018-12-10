@@ -88,7 +88,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
    [df15]: <https://git.io/fpabN>
    [df14]: <https://git.io/fpZzH>
-   [df9]: <https://git.io/fpUfc>
+   [df9]: <https://miradb.com/docs>
 
    [npm-image]: https://img.shields.io/npm/v/mira-db.svg?style=flat
    [npm-url]: https://npmjs.org/package/mira-db
