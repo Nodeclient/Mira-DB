@@ -87,7 +87,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
    [df15]: <https://git.io/fpabN>
-   [df14]: <https://git.io/fpZzH>
+   [df14]: <http://miradb.com/docs/#simple-admin-section>
    [df9]: <https://miradb.com/docs>
 
    [npm-image]: https://img.shields.io/npm/v/mira-db.svg?style=flat
