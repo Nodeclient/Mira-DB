@@ -57,10 +57,10 @@ MiraDB is open source (OODBMS) object oriented database management system that u
     });           
 ```  
 
-## Connector
+## Connector | open-source (zip archive)
 * [CONNECTORS][df1]
 
-## Clients open-source (zip archive)
+## Clients | open-source (zip archive)
 * [CLIENTS][df2]
 
 
