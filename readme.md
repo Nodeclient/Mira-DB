@@ -58,7 +58,11 @@ MiraDB is open source (OODBMS) object oriented database management system that u
 ```  
 
 ## Connector
-* [ALL CONNECTORS][df1]
+* [CONNECTORS][df1]
+
+## Clients open-source (zip archive)
+* [CLIENTS][df2]
+
 
 -----
 ## Check this project for backup
@@ -88,6 +92,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+   [df2]: <https://git.io/fpQur>
    [df1]: <https://git.io/fpQua>
    [df15]: <https://git.io/fpabN>
    [df14]: <http://miradb.com/docs/#simple-admin-section>
