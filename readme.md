@@ -1,4 +1,4 @@
-# Mira Database Server
+# Mira-DB (OODBMS)
 
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
