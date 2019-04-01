@@ -18,6 +18,17 @@ MiraDB is open source object oriented database management system that uses "regu
 
 ## INSTALL Arch Repository
 * https://aur.archlinux.org/packages/miradb/
+
+ ```
+  git clone https://aur.archlinux.org/miradb.git
+  cd miradb
+  makepkg -si
+  
+  sh /usr/bin/miradb/service
+  miradb start
+  
+  http://127.0.0.1:8123
+ ```
 ---
 
 ## Example usage > (Local Database)
@@ -65,9 +76,6 @@ MiraDB is open source object oriented database management system that uses "regu
 * [CLIENTS][df2]
 
 
------
-## Check this project for backup
-* More Detail : https://github.com/Nodeclient/install-make
 -----
 
 ## License MIT
