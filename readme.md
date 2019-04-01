@@ -13,10 +13,11 @@ MiraDB is open source object oriented database management system that uses "regu
 * [DOCUMENTS][df9]
 
 ## Releases & download
-
 * [MIRADB BINARY][df15]
 * [SIMPLE WEB ADMIN][df14]
 
+## INSTALL Arch Repository
+* https://aur.archlinux.org/packages/miradb/
 ---
 
 ## Example usage > (Local Database)
