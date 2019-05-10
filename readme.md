@@ -7,7 +7,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/npm/mira-db/badge.svg)](https://snyk.io/test/npm/mira-db)
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-MiraDB is open source object oriented database management system that uses "regular expression" queries 
+MiraDB is open source javascript object oriented database management system that uses "regular expression" queries 
 
 ## Help documentation
 * [DOCUMENTS][df9]
