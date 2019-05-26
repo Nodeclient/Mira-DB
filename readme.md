@@ -48,25 +48,29 @@ MiraDB is open source javascript object oriented database management system that
         CREATE:true,
         LIST:true 
     }
-    // YOUR STORAGE FOLDER FULL PATH
-    var My_db_folder = "/your_database_folder";
-    //SELECT DATABASE
-    var My_db_name = "test";
-    // CREATE NEW DATABASE OBJECT
-    var mydb = new mira(My_db_folder,"UTF-8");
-    // SET QUERY
-    var query = 'SELECT TABLE person';
+    // IMPORT MODULE
+    const mira = require("mira-db");
+    // YOUR APP PERMISSION
+    var Perms = { SELECT:true,ADD:true,UNIQUE:true,UPDATE:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true }
+    // DATABASE STORAGE FOLDER
+    var Storage = __dirname + "/data";
+    // DATABASE NAME
+    var DB = "test";
+    // CREATE NEW MIRA-DB OBJECT
+    var new_database = new mira(Storage,DB,Perms,"UTF-8");
+    //SET QUERY
+    var query = 'SELECT TABLE person'
 ```
 ```js    
-    // METHOD (EXAMPLE 1)
-    var result = mydb.Query(query,My_db_name,perms);
+    // RESULT (RETURN EXAMPLE)
+    var result = new_database.Query(query);  
     console.log(  result );
 ```  
 ```js    
-    // METHOD (EXAMPLE 2) 
-    mydb.Query(query,My_Db_name,perms ,function(result){
+    // RESULT (CALLBACK EXAMPLE)
+    new_database.Query(query ,function(result){
       console.log(  result );
-    });           
+    });            
 ```  
 
 ## Connector | open-source (zip archive)
