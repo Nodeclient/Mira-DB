@@ -34,10 +34,10 @@ MiraDB is open source javascript object oriented database management system that
 ## Example usage > (Local Database)
 
  ```js
-    // INCLUDE MIRA
+    // IMPORT MODULE
     const mira = require("mira-db");
-    // SET YOUR USER PERMISSION
-    var perms = { 
+    // SET YOUR APP PERMISSION
+    var Perms = { 
         UNIQUE:true,
         SELECT:true,
         ADD:true,
@@ -48,10 +48,6 @@ MiraDB is open source javascript object oriented database management system that
         CREATE:true,
         LIST:true 
     }
-    // IMPORT MODULE
-    const mira = require("mira-db");
-    // YOUR APP PERMISSION
-    var Perms = { SELECT:true,ADD:true,UNIQUE:true,UPDATE:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true }
     // DATABASE STORAGE FOLDER
     var Storage = __dirname + "/data";
     // DATABASE NAME
