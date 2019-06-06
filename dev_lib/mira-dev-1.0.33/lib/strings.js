@@ -23,6 +23,7 @@ var DROP_DATABASE =      /DROP[ ]+DATABASE[ ]+(.*\S+\w+)/ig;
 var LIST_DATABASE =      /LIST[ ]+DATABASE[ ]+(.*\S+\w+)/ig;
 var LIST_TABLE =         /LIST[ ]+TABLE[ ]+(.*\S+\w+)/ig;
 var STRING_PARSE =       /([a-zA-Z]+)|("[a-zA-Z\s]+"?)\s?/g;
+var JQL_PARSE =          /[";']/g;
 
 module.exports = { 
     TAG:JQL_TAG,
@@ -48,5 +49,6 @@ module.exports = {
     LIST_DATABASE:LIST_DATABASE,
     UPDATE_ROW:UPDATE_ROW,
 	UNIQUE_COL:UNIQUE_COLUMN,
-    LIST_TABLE:LIST_TABLE
+    LIST_TABLE:LIST_TABLE,
+    JS:JQL_PARSE
 }

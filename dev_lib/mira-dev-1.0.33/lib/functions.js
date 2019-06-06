@@ -283,6 +283,16 @@ function check_col(db, column) {//+
     return [RESULT.length, uniq_array(RESULT)];
 }
 
+function strparse (_string) {
+    return JSON.parse(_string);
+}
+
+function strstringify (_string) {
+   return JSON.stringify(_string);
+}
+
+
+
 module.exports = {
     TableEmpty: CheckEmptyTB,
     UniqArr: uniq_array,
@@ -308,5 +318,7 @@ module.exports = {
     ListTBL: Listfile,
     CreateDB: Createfolder,
     DeleteDB: Deletefolder,
-    DeleteTBL: Deletefile
+    DeleteTBL: Deletefile,
+    parse:strparse,
+    stringify:strstringify
 }
