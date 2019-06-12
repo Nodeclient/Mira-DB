@@ -16,20 +16,6 @@ MiraDB is open source javascript object oriented database management system that
 * [MIRADB BINARY][df15]
 * [SIMPLE WEB ADMIN][df14] 
 
-## Install Arch Repository
-* https://aur.archlinux.org/packages/miradb/
-
- ```
-  git clone https://aur.archlinux.org/miradb.git
-  cd miradb
-  makepkg -sicC
-  
-  sh /usr/bin/miradb/service
-  miradb start
-  
-  http://127.0.0.1:8123
- ```
----
 
 ## Example usage > (Local Database)
 
