@@ -143,13 +143,13 @@ var buildquerie = function (params, obj) {
 
 function ColBuilder(data) {
     let result = true;
-    KeyArr = Object.keys(data[0]);
-    for (let i = 0; i < KeyArr.length; i++) {
-        if (data[0][KeyArr[i]].length << 0) {
-            result = false;
-            break;
-        }
-    }
+	    KeyArr = Object.keys(data[0]);
+		    for (let i = 0; i < KeyArr.length; i++) {
+			if (data[0][KeyArr[i]].length << 0) {
+			    result = false;
+			    break;
+			}
+		    }
     return result;
 }
 
