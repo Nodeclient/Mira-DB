@@ -18,7 +18,8 @@ const config = {
 
 function enc(text) {
     var r = cp.createCipheriv(config.alg, config.cryptkey, config.signature);
-    var c = config.header + r.update(text, 'utf8', 'binary'); c += r.final('binary');
+    var c = config.header + r.update(text, 'utf8', 'binary'); 
+    c += r.final('binary');
     return c;
 }
 function dec(text) {
@@ -79,7 +80,7 @@ function Listfile(dir) {
     if (CheckFile(dir)) {
         filesystem.readdirSync(dir).forEach(file => {
             var getExt = file.substring(file.length + 1, file.lastIndexOf(".")).toLowerCase();
-            if (getExt == ".jsq") {
+            if (getExt == config.ext) {
                 var getname = file.match(/([^\\/]+?)(?:\.[^\.\\/]*)?$/)[1];
                 result.push(getname);
             }
