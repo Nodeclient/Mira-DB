@@ -182,7 +182,7 @@ class QueryFunction {
                 mdb.ExportFile(STO, vf)
                 callback(true);
             } else {
-                callback(handling.Error("e0xje02a",mdb.stringify(str.obj)));
+                callback(handling.Error("e0xje02a", mdb.stringify(str.obj)));
             }
         } else {
             callback(handling.Error("e0xjm02", mdb.stringify(mdb.UniqArr(str.col))));
@@ -213,7 +213,7 @@ class QueryFunction {
                 callback(handling.Error("e0xjm05", mdb.stringify(mdb.UniqArr(str.col))));
             }
         } else {
-            callback(handling.Error("e0xjm04",mdb.stringify(mdb.UniqArr(str.str))));
+            callback(handling.Error("e0xjm04", mdb.stringify(mdb.UniqArr(str.str))));
         }
     }
 
@@ -240,7 +240,7 @@ class QueryFunction {
         if (str.out[0] == 0) {
             callback(mdb.AddTCol(STO, db, column));
         } else {
-            callback(handling.Error("w0xjs06",mdb.stringify(str.out[1])));
+            callback(handling.Error("w0xjs06", mdb.stringify(str.out[1])));
         }
     }
 
@@ -272,7 +272,7 @@ class QueryFunction {
                 }
                 callback(false, true);
             } else {
-                callback(handling.Error("e0xjm05",mdb.stringify(mdb.UniqArr(str.res))));
+                callback(handling.Error("e0xjm05", mdb.stringify(mdb.UniqArr(str.res))));
             }
         } else {
             callback(handling.Error("e0xjm03", "ARRAY"), null);
@@ -299,7 +299,7 @@ class QueryFunction {
         if (str.res.length == 0) {
             callback(str.dat);
         } else {
-            callback(handling.Error("e0xjm041",mdb.stringify(mdb.UniqArr(str.res))));
+            callback(handling.Error("e0xjm041", mdb.stringify(mdb.UniqArr(str.res))));
         }
     }
 

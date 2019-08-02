@@ -103,16 +103,5 @@ class queryunique {
 
 
 module.exports = {
-    output,
-    miraconfig,
-    datastring,
-    queryupdatetable,
-    querycreatetable,
-    querydeleterow,
-    querydeletecol,
-    queryrenamecol,
-    queryaddrow,
-    queryselectlimit,
-    queryselecttablecol,
-    queryunique
+    output,miraconfig,datastring,queryupdatetable,querycreatetable,querydeleterow,querydeletecol,queryrenamecol,queryaddrow,queryselectlimit,queryselecttablecol,queryunique
 };
