@@ -1,4 +1,4 @@
 ### MiraDB (OOJS) Database Management System 
 
-> 1.0.34 (early test)(not stable)
-> update still in progress ...
+> 0.34 still updating proccess
+> This version includes early testing modules , classes sources may change at any time . (not stable)
