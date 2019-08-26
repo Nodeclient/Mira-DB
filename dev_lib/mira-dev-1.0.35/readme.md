@@ -1,4 +1,4 @@
-### MiraDB (OOJS) Database Management System 
+### MiraDB (OOJSDBM)
 
 > 0.35 update in progress
 >
