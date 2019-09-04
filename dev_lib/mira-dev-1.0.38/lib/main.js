@@ -160,7 +160,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             const str = new output(mdb.BuildQuery(String(CMD), tag.DELETE_ROW));
                             const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[1], conf.CharSet), null, str.out[2],mdb.parse(str.out[4]), null, path.join(conf.Storage, DB, str.out[1] + mdb.Setting.ext));
                                 if (tmp.dbf[0] == 0) {
-                                    return MiraQuery.DELETE_ROW(tmp.dir,mdb.parse(tmp.dbf[1]), tmp.col, tmp.val)
+                                    return MiraQuery.DELETE_ROW(tmp.dir,mdb.parse(tmp.dbf[1]), tmp.col, tmp.val);
                                 }
                         }
                         //DELETE ROW INDEX lastupdate:05.06.2019
@@ -217,7 +217,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             const str = new output(mdb.BuildQuery(String(CMD), tag.ADD_ROW));
                             const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[1], conf.CharSet), null, mdb.parse(str.out[2]), mdb.parse(str.out[4]), null, path.join(conf.Storage, DB, str.out[1] + mdb.Setting.ext));
                                 if (tmp.dbf[0] == 0) {
-                                    MiraQuery.ADD_ROW(tmp.dir, mdb.parse(tmp.dbf[1]), tmp.col, tmp.val, function (err, data) {
+                                    MiraQuery.ADD_ROW(tmp.dir, mdb.parse(tmp.dbf[1]), tmp.col, tmp.val,str.out[1], function (err, data) {
                                         if (err) { tmp.dbf = err; } else { tmp.dbf = data; }
                                     });
                                 }
@@ -311,7 +311,6 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                     break;
                 default:
                     return handling.Error("e0xje02", JqlString[0]);
-                    break;
             }
         } catch (e) {
             return handling.Error("e0xje01", e.message);

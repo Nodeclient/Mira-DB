@@ -50,7 +50,7 @@ class querycreatetable {
 
 class querydeleterow {
     constructor(_S, _R) {
-        this.sta = _I;
+        this.sta = _S;
         this.res = _R;
     }
 }

@@ -6,7 +6,18 @@
 var mdb = require('./functions');
 var handling = require('./error_handling');
 var path = require('path');
-var { output, queryupdatetable, querycreatetable, querydeleterow, querydeletecol, queryrenamecol, queryaddrow, queryselectlimit, queryselecttablecol, queryunique } = require('./classes');
+var {
+    output,
+    queryupdatetable,
+    querycreatetable,
+    querydeleterow,
+    querydeletecol,
+    queryrenamecol,
+    queryaddrow,
+    queryselectlimit,
+    queryselecttablecol,
+    queryunique
+} = require('./classes');
 class QueryFunction {
 
     CREATE_DATABASE(sto, db, callback) {
@@ -30,7 +41,7 @@ class QueryFunction {
     DROP_DATABASE(dir, val, callback) {
         const str = new output(mdb.DeleteDB(dir));
         if (str.out) {
-            callback(_RESULT);
+            callback(true);
         } else {
             callback(handling.Error("e0xje213", val));
         }
@@ -102,22 +113,24 @@ class QueryFunction {
     }
 
     DELETE_ROW_INDEX(STO, db, value, tbl_name) {
-        const str = new querydeleterow(null, mdb.TableEmpty(db));
-        if (db.length < 2) {
-            var keys = Object.keys(db[0]);
-            keys.forEach(function (p) {
-                db[0][p] = "";
-                str.sta = true;
-            });
-        } else {
-            Object.keys(db).forEach(function (key) {
+        const str = new querydeleterow("null", mdb.TableEmpty(db));
+        Object.keys(db).forEach(function (key) {
                 if (key == value - 1) {
-                    delete db[key];
-                    str.sta = true;
-                }
-            });
-        }
-        if (str.sta == null) {
+                    if (db.length <= 1) {
+                        var keys = Object.keys(db[0]);
+                            keys.forEach(function (p) {
+                                db[0][p] = "";
+                                str.sta = true;
+                            });
+                    } else {
+                        delete db[key];
+                        str.sta = true;
+                    }
+                }else {
+                    str.sta == "null";
+                } 
+        });
+        if (str.sta == "null") {
             return handling.Error("e0xjm041", value);
         } else if (str.sta) {
             if (str.res) {
@@ -131,26 +144,28 @@ class QueryFunction {
     }
 
     DELETE_ROW(STO, db, column, value) {
-        const str = new querydeleterow(null, null);
-        if (db.length < 2) {
-            var keys = Object.keys(db[0]);
-            keys.forEach(function (p) {
-                db[0][p] = "";
-                str.sta = true;
-            });
-        } else {
+        const str = new querydeleterow("null", "null");
             Object.keys(db).forEach(function (key) {
                 if (typeof db[key][column] == 'undefined') {
                     str.sta = false;
                 } else {
-                    if (db[key][column].indexOf(value[0]) == 0) {
-                        delete db[key];
-                        str.sta = true;
-                    }
+                    if (db[key][column] == value[0] ) {
+                        if (db.length <= 1) {
+                            var keys = Object.keys(db[0]);
+                                keys.forEach(function (p) {
+                                    db[0][p] = "";
+                                    str.sta = true;
+                                });
+                        } else {
+                            delete db[key];
+                            str.sta = true;
+                        }
+                    }else {
+                        str.sta == "null";
+                    } 
                 }
             });
-        }
-        if (str.sta == null) {
+        if (str.sta == "null") {
             return handling.Error("e0xjm01", value[0]);
         } else if (str.sta == false) {
             return handling.Error("e0xjm02", column);
@@ -244,7 +259,7 @@ class QueryFunction {
         }
     }
 
-    ADD_ROW(STO, db, column, value, callback) {
+    ADD_ROW(STO, db, column, value, db_tbl, callback) {
         const str = new queryaddrow({}, []);
         if (Array.isArray(column) && Array.isArray(value)) {
             for (var key in db[0]) {
@@ -259,7 +274,7 @@ class QueryFunction {
                             }
                         }
                     } else {
-                        str.res.push(column[c])
+                        str.res.push(column[c]);
                     }
                 }
             }
@@ -268,7 +283,7 @@ class QueryFunction {
                 var vf = mdb.encrypt(mdb.stringify(db));
                 mdb.ExportFile(STO, vf);
                 if (mdb.ColumnBuilder(db)) {
-                    DELETE_ROW_INDEX(STO, db, 1);
+                    this.DELETE_ROW_INDEX(STO, db, 1, db_tbl);
                 }
                 callback(false, true);
             } else {
@@ -352,4 +367,5 @@ class QueryFunction {
         }
     }
 
-} module.exports = new QueryFunction();
+}
+module.exports = new QueryFunction();
