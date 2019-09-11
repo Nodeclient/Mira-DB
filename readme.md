@@ -16,7 +16,6 @@ MiraDB is open source javascript object oriented database management system that
 * [MIRADB BINARY][df15]
 * [SIMPLE WEB ADMIN][df14] 
 
-
 ## Example usage > (Local Database)
 
  ```js
@@ -54,8 +53,9 @@ MiraDB is open source javascript object oriented database management system that
       console.log(  result );
     });            
 ```  
-## Test Version
-* [mira-db-dev-1.0.39][df200]
+
+### Test Version (unstable)
+* [Mira-DB-dev-1.0.39][df200]
 
 ## Connector | open-source (zip archive)
 * [CONNECTORS][df1]
@@ -63,8 +63,6 @@ MiraDB is open source javascript object oriented database management system that
 ## Clients | open-source (zip archive)
 * [CLIENTS][df2]
 
-
------
 
 ## License MIT
 
