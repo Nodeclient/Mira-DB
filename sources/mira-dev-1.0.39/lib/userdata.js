@@ -4,7 +4,7 @@
 */
 
 var fs = require('fs');
-var handling = require('./error_handling');
+//var handling = require('./error_handling');
 module.exports = {
     LoadLoginData: function (cnf) {
         var LoginData = [], SplitLoginData = /<(.*?)>/g;

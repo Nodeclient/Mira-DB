@@ -2,6 +2,7 @@
     Mira-db 
     https://www.npmjs.com/package/mira-db
 */
+
 module.exports = {
 Error : function(_n,_a) { try { 
 _n = typeof _n !== 'undefined' ? _n : "0"; _a = typeof _a !== 'undefined' ? _a : "Null,Null"; var _str= _a.split("<>");
