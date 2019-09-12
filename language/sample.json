@@ -1,6 +1,6 @@
 {
-    "Author":"Leo Zacharry",
-    "Language":"English-US",
+    "Author":"<your name here>",
+    "Language":"<language name>-<short name>",
     "Encode":"UTF-8",
     "Error":[
         { "resume":true, "id":"a0xj0s1" , "code":"MIRA" ,"msg":"Null !"},
