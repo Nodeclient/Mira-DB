@@ -233,12 +233,12 @@ class QueryFunction {
     }
 
     RENAME_TABLE(STO, DB, oldname, newname, callback) {
-        const str = new output(mdb.TableExist(STO, DB, oldname, newname));
+      const str = new output(mdb.TableExist(STO, DB, oldname, newname));
         if (str.out[0] == 0) {
             callback(mdb.CreateTable(STO, DB, oldname, newname));
         } else {
             callback(handling.Error("e0xjm06", mdb.stringify(str.out[1])));
-        }
+        } 
     }
 
     RENAME_DATABASE(STO, DB, oldname, newname, callback) {
@@ -261,34 +261,34 @@ class QueryFunction {
 
     ADD_ROW(STO, db, column, value, db_tbl, callback) {
         const str = new queryaddrow({}, []);
-        if (Array.isArray(column) && Array.isArray(value)) {
-            for (var key in db[0]) {
-                str.dat[key] = "null";
-                for (var c in column) {
-                    if (typeof db[0][column[c]] !== "undefined") {
-                        if (key == column[c]) {
-                            if (typeof value[c] == "undefined") {
-                                str.dat[column[c]] = "null";
-                            } else {
-                                str.dat[column[c]] = value[c];
+            if (Array.isArray(column) && Array.isArray(value)) {
+                for (var key in db[0]) {
+                    str.dat[key] = "null";
+                    for (var c in column) {
+                        if (typeof db[0][column[c]] !== "undefined") {
+                            if (key == column[c]) {
+                                if (typeof value[c] == "undefined") {
+                                    str.dat[column[c]] = "null";
+                                } else {
+                                    str.dat[column[c]] = value[c];
+                                }
                             }
+                        } else {
+                            str.res.push(column[c]);
                         }
-                    } else {
-                        str.res.push(column[c]);
                     }
                 }
-            }
-            if (str.res.length == 0) {
-                db.push(str.dat);
-                var vf = mdb.encrypt(mdb.stringify(db));
-                mdb.ExportFile(STO, vf);
-                if (mdb.ColumnBuilder(db)) {
-                    this.DELETE_ROW_INDEX(STO, db, 1, db_tbl);
+                if (str.res.length == 0) {
+                    db.push(str.dat);
+                        var vf = mdb.encrypt(mdb.stringify(db));
+                            mdb.ExportFile(STO, vf);
+                                if (mdb.ColumnBuilder(db)) {
+                                    this.DELETE_ROW_INDEX(STO, db, 1, db_tbl);
+                                }
+                    callback(false, true);
+                } else {
+                    callback(handling.Error("e0xjm05", mdb.stringify(mdb.UniqArr(str.res))));
                 }
-                callback(false, true);
-            } else {
-                callback(handling.Error("e0xjm05", mdb.stringify(mdb.UniqArr(str.res))));
-            }
         } else {
             callback(handling.Error("e0xjm03", "ARRAY"), null);
         }
@@ -321,7 +321,7 @@ class QueryFunction {
     SELECT_TABLE_COLUMN(db, column, callback) {
         const str = new queryselecttablecol([], []);
         Object.keys(db).forEach(function (key) {
-            var result = {};
+            var result = {};     
             column.forEach(a => {
                 if (typeof db[key][a] !== "undefined") {
                     result[a] = db[key][a];
@@ -340,30 +340,30 @@ class QueryFunction {
 
     SELECT_TABLE(db, callback) {
         const str = new output([]);
-        Object.keys(db).forEach(function (key) {
-            if (db[key] != null) {
-                str.out.push(db[key]);
-            }
-        });
+            Object.keys(db).forEach(function (key) {
+                if (db[key] != null) {
+                    str.out.push(db[key]);
+                }
+            });
         callback(str.out);
     }
 
     UNIQUE(array, col, callback) {
         const str = new queryunique([], []);
-        for (var i = array.length - 1; i >= 0; i--) {
-            if (typeof array[i][col] == "undefined") {
-                str.arr.push(col);
+            for (var i = array.length - 1; i >= 0; i--) {
+                if (typeof array[i][col] == "undefined") {
+                    str.arr.push(col);
+                }
+                if (str.dat.indexOf(array[i][col]) < 0) {
+                    str.dat.push(array[i][col]);
+                } else {
+                    array.splice(i, 1);
+                }
             }
-            if (str.dat.indexOf(array[i][col]) < 0) {
-                str.dat.push(array[i][col]);
-            } else {
-                array.splice(i, 1);
-            }
-        }
         if (str.arr.length == 0) {
-            callback(array);
-        } else {
-            callback(handling.Error("e0xjm05", "ERROR"));
+                callback(array);
+            } else {
+                callback(handling.Error("e0xjm05", "ERROR"));
         }
     }
 

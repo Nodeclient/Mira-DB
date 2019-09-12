@@ -34,9 +34,9 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
     function Query(CMD, DB, PERM, callback) {
         try {
             PERM = (typeof PERM !== 'undefined') ? PERM : _default;
-            CMD = (typeof CMD !== 'undefined') ? CMD : "null";
-            var J_STRING = String(CMD).toLowerCase().match(tag.TAG);
-
+                CMD = (typeof CMD !== 'undefined') ? CMD : "null";
+                    var J_STRING = String(CMD).toLowerCase().match(tag.TAG);
+                    
             switch (J_STRING[0].toLowerCase()) {
                 case "unique":
                     //UNIQUE lastupdate:05.06.2019
@@ -45,7 +45,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             const str = new output(mdb.BuildQuery(String(CMD), tag.UNIQUE_COL));
                             const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[2], conf.CharSet), null, null, null, null, null);
                                 if (tmp.dbf[0] == 0) {
-                                    MiraQuery.UNIQUE(mdb.parse(tmp.dbf[1]), str.out[1], function (data) {
+                                    MiraQuery.UNIQUE(mdb.parse(tmp.dbf[1]), str.out[1] , function (data) {
                                         tmp.dbf = data;
                                     });
                                 }
@@ -312,16 +312,15 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                 default:
                     return handling.Error("e0xje02", J_STRING[0]);
             }
-        } catch (e) {
-            return handling.Error("e0xje01", e.message);
+        } catch (e) {// e.message
+            return handling.Error("e0xje01",e);
         }
     }
-
     this.Query = function (CMD, callback) {
         if (callback) {
             callback(Query(CMD, conf.DB, conf.Permission));
         } else {
             return Query(CMD, conf.DB, conf.Permission);
         }
-    }
-} 
+    };
+};

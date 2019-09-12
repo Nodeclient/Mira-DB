@@ -74,7 +74,7 @@ case "e0xje14":
 return {"resume":false,"code":"MIRA_3006","text":  J_string("permission denied type:('%s')",[ _str[0] ]) };
 break;
 case "e0xje16":  
-return {"resume":false,"code":"MIRA_1009","text":  J_string("you have an error in your (%s query)",[ _str[0] ])   };
+return {"resume":false,"code":"MIRA_1009","text":  J_string("you have an error in your query (%s)",[ _str[0] ])   };
 break;
 case "e0xje17":  
 return {"resume":false,"code":"MIRA_3008","text": J_string("empty database (name) in connection string %s",[_str[0]]) };

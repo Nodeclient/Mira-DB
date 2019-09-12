@@ -3,7 +3,7 @@ module.exports = function (TOS, OBJ, ARR) {
     var CUR = [] , SET_ERR = [];
         TOS = require('./tool/TS84')(TOS); //TRIM
             for (var i = 0; i < OBJ.length; i++) {
-                for (var h = 0; h < ARR.length; h++) {
+                for (var h = 0; h < ARR.length; h++) {   
                     if (typeof OBJ[i][ARR[h]] !== 'undefined') {
                         if (OBJ[i][ARR[h]].indexOf(TOS) != -1) {
                             if (!require('./tool/MX56')(CUR, OBJ[i])) CUR.push(OBJ[i]); //EXISTS
@@ -13,7 +13,6 @@ module.exports = function (TOS, OBJ, ARR) {
                     }
                 }
             }
-
         if (SET_ERR.length == 0) {
                 return CUR;
             } else {

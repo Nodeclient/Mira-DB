@@ -1,5 +1,7 @@
-module.exports = function (ARR) {
+module.exports = function (FLTXT) {
     // Set Objcet Property
     var OBJ = {};
-        return ARR.filter(function (i) { return OBJ.hasOwnProperty(i) ? false : (OBJ[i] = true); });
+        return FLTXT.filter(function (item) {
+            return OBJ.hasOwnProperty(item) ? false : (OBJ[item] = true)
+        });
 };
