@@ -15,6 +15,7 @@ MiraDB is open source javascript object oriented database management system that
 ## Releases & download
 * [MIRADB BINARY][df15]
 * [SIMPLE WEB ADMIN][df14] 
+* [SAMPLE LANGUAGE FILE][df141]
 
 ## Example usage (Local Database)
 
@@ -91,6 +92,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+   [df141]: <https://git.io/JeYkm>
    [df200]: <https://git.io/JemsI>
    [df2]: <https://git.io/fpQur>
    [df1]: <https://git.io/fpQua>
