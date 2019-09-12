@@ -1,1 +1,3 @@
-not yet
+
+## Mira-db list of Translators
+> en_us :
