@@ -95,8 +95,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
    [df2]: <https://git.io/fpQur>
    [df1]: <https://git.io/fpQua>
    [df15]: <https://git.io/fpabN>
-   [df14]: <http://miradb.com/docs/#simple-admin-section>
-   [df9]: <https://miradb.com/docs>
+   [df14]: <https://nodeclient.github.io/helpdocs/#simple-admin-section>
+   [df9]: <https://nodeclient.github.io/helpdocs/>
 
    [npm-image]: https://img.shields.io/npm/v/mira-db.svg?style=flat
    [npm-url]: https://npmjs.org/package/mira-db
