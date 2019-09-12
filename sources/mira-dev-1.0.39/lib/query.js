@@ -4,7 +4,7 @@
 */
 
 var mdb = require('./system');
-var handling = require('./error_handling');
+var handling = require('./error');
 var path = require('path');
 var {
     output,
@@ -22,7 +22,7 @@ class QueryFunction {
 
     CREATE_DATABASE(sto, db, callback) {
         if (mdb.Check(sto)) {
-            callback(handling.Error("w0xjs03", db), false);
+            callback(handling.Error("w0xjs03", [db]), false);
         } else {
             mdb.CreateDB(sto);
             callback(false, true);
@@ -34,7 +34,7 @@ class QueryFunction {
         if (str.out) {
             callback(true);
         } else {
-            callback(handling.Error("e0xje213", tbl));
+            callback(handling.Error("e0xje213", [tbl]));
         }
     }
 
@@ -43,7 +43,7 @@ class QueryFunction {
         if (str.out) {
             callback(true);
         } else {
-            callback(handling.Error("e0xje213", val));
+            callback(handling.Error("e0xje213", [val]));
         }
     }
 
@@ -80,13 +80,13 @@ class QueryFunction {
                     mdb.ExportFile(STO, _UPDATE_TABLE);
                     callback(true);
                 } else {
-                    callback(handling.Error("e0xjm01", find[1]));
+                    callback(handling.Error("e0xjm01",[ find[1]] ));
                 }
             } else {
-                callback(handling.Error("e0xjm05", mdb.stringify(mdb.UniqArr(str.col))));
+                callback(handling.Error("e0xjm05", [mdb.stringify(mdb.UniqArr(str.col))] ));
             }
         } else {
-            callback(handling.Error("e0xjm04", mdb.stringify(mdb.UniqArr(str.res))));
+            callback(handling.Error("e0xjm04", [mdb.stringify(mdb.UniqArr(str.res))] ));
         }
     }
 
@@ -108,7 +108,7 @@ class QueryFunction {
         if (str.res) {
             callback(true);
         } else {
-            callback(handling.Error("w0xjs06", tbl));
+            callback(handling.Error("w0xjs06", [tbl] ));
         }
     }
 
@@ -131,14 +131,14 @@ class QueryFunction {
                 } 
         });
         if (str.sta == "null") {
-            return handling.Error("e0xjm041", value);
+            return handling.Error("e0xjm041", [value] );
         } else if (str.sta) {
             if (str.res) {
                 var _DELETE_ROW_INDEX = mdb.encrypt(mdb.stringify(mdb.BuildArr(db)));
                 mdb.ExportFile(STO, _DELETE_ROW_INDEX);
                 return true;
             } else {
-                return handling.Error("e0xjm041a", tbl_name);
+                return handling.Error("e0xjm041a", [tbl_name] );
             }
         }
     }
@@ -166,9 +166,9 @@ class QueryFunction {
                 }
             });
         if (str.sta == "null") {
-            return handling.Error("e0xjm01", value[0]);
+            return handling.Error("e0xjm01", [value[0]] );
         } else if (str.sta == false) {
-            return handling.Error("e0xjm02", column);
+            return handling.Error("e0xjm02", [column] );
         } else if (str.sta) {
             var _DELETE_ROW = mdb.encrypt(mdb.stringify(mdb.BuildArr(db)));
             mdb.ExportFile(STO, _DELETE_ROW);
@@ -197,10 +197,10 @@ class QueryFunction {
                 mdb.ExportFile(STO, vf)
                 callback(true);
             } else {
-                callback(handling.Error("e0xje02a", mdb.stringify(str.obj)));
+                callback(handling.Error("e0xje02a",[mdb.stringify(str.obj)] ));
             }
         } else {
-            callback(handling.Error("e0xjm02", mdb.stringify(mdb.UniqArr(str.col))));
+            callback(handling.Error("e0xjm02", [mdb.stringify(mdb.UniqArr(str.col))] ));
         }
     }
 
@@ -225,10 +225,10 @@ class QueryFunction {
                 mdb.ExportFile(STO, vf)
                 callback(true);
             } else {
-                callback(handling.Error("e0xjm05", mdb.stringify(mdb.UniqArr(str.col))));
+                callback(handling.Error("e0xjm05",[ mdb.stringify(mdb.UniqArr(str.col))] ));
             }
         } else {
-            callback(handling.Error("e0xjm04", mdb.stringify(mdb.UniqArr(str.str))));
+            callback(handling.Error("e0xjm04", [mdb.stringify(mdb.UniqArr(str.str))] ));
         }
     }
 
@@ -237,7 +237,7 @@ class QueryFunction {
         if (str.out[0] == 0) {
             callback(mdb.CreateTable(STO, DB, oldname, newname));
         } else {
-            callback(handling.Error("e0xjm06", mdb.stringify(str.out[1])));
+            callback(handling.Error("e0xjm06", [mdb.stringify(str.out[1])] ));
         } 
     }
 
@@ -246,7 +246,7 @@ class QueryFunction {
         if (str.out[0] == 0) {
             callback(mdb.CreatTFolder(STO, DB, oldname, newname));
         } else {
-            callback(handling.Error("e0xjm07", mdb.stringify(str.out[1])));
+            callback(handling.Error("e0xjm07", [mdb.stringify(str.out[1])] ));
         }
     }
 
@@ -255,7 +255,7 @@ class QueryFunction {
         if (str.out[0] == 0) {
             callback(mdb.AddTCol(STO, db, column));
         } else {
-            callback(handling.Error("w0xjs06", mdb.stringify(str.out[1])));
+            callback(handling.Error("w0xjs06", [mdb.stringify(str.out[1])] ));
         }
     }
 
@@ -287,10 +287,10 @@ class QueryFunction {
                                 }
                     callback(false, true);
                 } else {
-                    callback(handling.Error("e0xjm05", mdb.stringify(mdb.UniqArr(str.res))));
+                    callback(handling.Error("e0xjm05", [mdb.stringify(mdb.UniqArr(str.res))] ));
                 }
         } else {
-            callback(handling.Error("e0xjm03", "ARRAY"), null);
+            callback(handling.Error("e0xjm03", ["ARRAY"]), null);
         }
     }
 
@@ -314,7 +314,7 @@ class QueryFunction {
         if (str.res.length == 0) {
             callback(str.dat);
         } else {
-            callback(handling.Error("e0xjm041", mdb.stringify(mdb.UniqArr(str.res))));
+            callback(handling.Error("e0xjm041", [mdb.stringify(mdb.UniqArr(str.res))] ));
         }
     }
 
@@ -334,7 +334,7 @@ class QueryFunction {
         if (str.col.length == 0) {
             callback(str.dat);
         } else {
-            callback(handling.Error("e0xjm05", mdb.stringify(mdb.UniqArr(str.col))));
+            callback(handling.Error("e0xjm05", [mdb.stringify(mdb.UniqArr(str.col))] ));
         }
     }
 
@@ -363,7 +363,7 @@ class QueryFunction {
         if (str.arr.length == 0) {
                 callback(array);
             } else {
-                callback(handling.Error("e0xjm05", "ERROR"));
+                callback(handling.Error("e0xjm05", ["ERROR"]));
         }
     }
 

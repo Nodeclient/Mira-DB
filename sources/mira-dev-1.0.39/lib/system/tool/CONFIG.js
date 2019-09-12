@@ -1,5 +1,5 @@
 module.exports = function () {
-    /* CONFIG */
+    /* MIRA-DB SYSTEM CONFIG */
     return  { 
         cryptkey: require('crypto').createHash('sha256').update('bin').digest(), 
         signature: "E4WXqn_IotaTPN6E", 

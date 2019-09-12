@@ -6,7 +6,7 @@
 var tag = require("./query/register");
 var mdb = require('./system');
 var { miraconfig, datastring, output } = require('./classes');
-var handling = require('./error_handling');
+var handling = require('./error');
 var path = require('path');
 var MiraQuery = require('./query');
 
@@ -21,13 +21,13 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                 if (mdb.Check(url)) {
                     return ["0", mdb.decrypt(mdb.ImportFile(url, CHR))];
                 } else {
-                    return handling.Error("e0xje06", TBL);
+                    return handling.Error("e0xje06", [TBL] );
                 }
             } else {
-                return handling.Error("e0xje213", DB);
+                return handling.Error("e0xje213", [DB] );
             }
         } else {
-            return handling.Error("e0xje13", STO);
+            return handling.Error("e0xje13", [STO] );
         }
     }
 
@@ -52,7 +52,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             return tmp.dbf;
                         }
                     } else {
-                        return handling.Error("e0xje14", "UNIQUE");
+                        return handling.Error("e0xje14", ["UNIQUE"]);
                     }
                     break;
                 case "update":
@@ -70,7 +70,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             return tmp.dbf;
                         }
                     } else {
-                        return handling.Error("e0xje14", "UPDATE");
+                        return handling.Error("e0xje14",["UPDATE"]);
                     }
                     break;
                 case "list":
@@ -91,7 +91,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             return tmp.dbf;
                         }
                     } else {
-                        return handling.Error("e0xje14", "LIST");
+                        return handling.Error("e0xje14", ["LIST"]);
                     }
                     break;
                 case "drop":
@@ -115,7 +115,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             return tmp.dbf;
                         }
                     } else {
-                        return handling.Error("e0xje14", "DROP");
+                        return handling.Error("e0xje14", ["DROP"]);
                     }
                     break;
                 case "create":
@@ -139,7 +139,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             return tmp.dbf;
                         }
                     } else {
-                        return handling.Error("e0xje14", "CREATE");
+                        return handling.Error("e0xje14", ["CREATE"]);
                     }
                     break;
                 case "delete":
@@ -172,7 +172,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                                 }
                         }
                     } else {
-                        return handling.Error("e0xje14", "DELETE");
+                        return handling.Error("e0xje14", ["DELETE"]);
                     }
                     break;
                 case "rename":
@@ -207,7 +207,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             return tmp.dbf;
                         }
                     } else {
-                        return handling.Error("e0xje14", "RENAME");
+                        return handling.Error("e0xje14", ["RENAME"]);
                     }
                     break;
                 case "add":
@@ -235,7 +235,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             return tmp.dbf;
                         }
                     } else {
-                        return handling.Error("e0xje14", "ADD");
+                        return handling.Error("e0xje14", ["ADD"]);
                     }
                     break;
                 case "select":
@@ -306,14 +306,14 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                         }
 
                     } else {
-                        return handling.Error("e0xje14", "SELECT");
+                        return handling.Error("e0xje14", ["SELECT"]);
                     }
                     break;
                 default:
-                    return handling.Error("e0xje02", J_STRING[0]);
+                    return handling.Error("e0xje02", [J_STRING[0]]);
             }
-        } catch (e) {// e.message
-            return handling.Error("e0xje01",e);
+        } catch (e) {
+            return handling.Error("e0xje01",[e.message]);
         }
     }
     this.Query = function (CMD, callback) {
