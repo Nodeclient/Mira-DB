@@ -12,6 +12,6 @@ module.exports = function (DIR) {
                         });
                     return LIST_RESULT;
                 } else {
-                    return require('../error_handling').Error("w0xjs07", "file");
+                    return require('../error_handling').Error("w0xjs07", ["FILE"]);
             }
 };

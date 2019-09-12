@@ -16,6 +16,6 @@ module.exports = function (TOS, OBJ, ARR) {
         if (SET_ERR.length == 0) {
                 return CUR;
             } else {
-                return require('../error_handling').Error("e0xjm05", JSON.stringify(require('./UF50')(SET_ERR)));
+                return require('../error_handling').Error("e0xjm05", [JSON.stringify(require('./UF50')(SET_ERR))] );
         }
 };

@@ -8,6 +8,6 @@ module.exports = function (STR) {
             E  += D.final('utf8');
                 return E ;
             } else {
-                return { code: "5689", message: "Cannot Open Database File" };
+                return {resume:false, code: "5689", message: "Cannot Open Database File" };
             }
 };
