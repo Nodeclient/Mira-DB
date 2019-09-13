@@ -6,6 +6,3 @@
 ### Simple Web Admin Interface 
     (EASY UI) 
         https://www.jeasyui.com/
-### Html Template -> miradb.com
-    (Dazzle)
-        www.styleshout.com
