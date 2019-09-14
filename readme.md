@@ -32,9 +32,11 @@ MiraDB is open source javascript object oriented database management system that
 ## Example usage (Local Database)
 
  ```js
-    // LANGUAGE FOLDER : "node_modules\mira-db\lang"
-    // SET LANGUAGE (NEW) (1.0.39)    
-    process.env.LANG="en_us";
+     /* MIRA-DB GLOBAL SETTINGS (NEW) 0.39 */
+        process.env.SET_LANG="en_us"; 
+     // 1.0.40 -> process.env.MIRA_DB_TOKEN="E4WXqn_IotaTPN6E";   
+     // 1.0.40 -> process.env.SET_FILE_HEADER="JQL1";          
+     // 1.0.40 -> process.env.SET_FILE_EXTENSION="jsq";  
     
     // IMPORT MODULE
     const mira = require("mira-db");
@@ -83,7 +85,7 @@ MiraDB is open source javascript object oriented database management system that
 
 ## License MIT
 
-Copyright (c) 2018 Levent Inan, https://github.com/Nodeclient/
+Copyright (c) 2018 , https://github.com/Nodeclient/
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
