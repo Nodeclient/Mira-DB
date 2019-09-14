@@ -7,7 +7,8 @@
 [![Known Vulnerabilities](https://snyk.io/test/npm/mira-db/badge.svg)](https://snyk.io/test/npm/mira-db)
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-MiraDB is open source javascript object oriented database management system that uses "regular expression" queries 
+MiraDB is open source javascript object oriented database management system 
+> the mira-query
 
 ## Help documentation
 * [DOCUMENTS][df9]
@@ -23,11 +24,11 @@ MiraDB is open source javascript object oriented database management system that
 
  > Stores data as a binary encrypted (JSON) file 
  
- > Mira-Querys very similar to mysql and of course very simple for developers to learn and use.
+ > Mira Querys contain terms matching a regular expression but very similar to mysql and of course very simple for developers to learn and use.
 
  > Cross application supporting , a lot of samples and easy connected with (Rest Api).
  
- > You can manually set the query restrict and each user has access to nine (boolean) types of permission for a table.
+ > You can manually set restricts and each user has access to nine (boolean) types of permission for a table.
  
 ----
 
