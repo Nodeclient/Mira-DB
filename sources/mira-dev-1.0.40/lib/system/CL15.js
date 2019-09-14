@@ -3,9 +3,6 @@ module.exports = function (FL, DATA_CHR) {
     if (require('fs').existsSync(FL)) {
         return require('fs').readFileSync(FL, DATA_CHR);
     } else {
-        return {
-            code: "3",
-            message: "Cannot Open File"
-        };
+        return  require('../error_handling').Error("e0xjs171",[FL]);
     }
 };

@@ -2,17 +2,16 @@
     Mira-db 
     https://www.npmjs.com/package/mira-db
 */
-
-var tag = require("./query/register");
-var mdb = require('./system');
-var {
+const tag = require("./query/register");
+const mdb = require('./system');
+const {
     miraconfig,
     datastring,
     output
 } = require('./classes');
-var handling = require('./error');
-var path = require('path');
-var MiraQuery = require('./query');
+const handling = require('./error');
+const path = require('path');
+const MiraQuery = require('./query');
 
 module.exports = function (_Storage, _Database, _Permission, _CharSet) {
     var _default = {
@@ -26,14 +25,20 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
         CREATE: true,
         LIST: true
     };
-    var conf = new miraconfig(_Storage, _CharSet, _Permission, _Database);
+var conf = new miraconfig(_Storage, _CharSet, _Permission, _Database);
 
     function OpenDB(STO, DB, TBL, CHR) {
         if (mdb.Check(STO)) {
             if (mdb.Check(path.join(STO, DB))) {
-                var url = path.join(STO, DB, TBL + mdb.Setting.ext);
+                const url = path.join(STO, DB, mdb.StrToFileName(TBL, mdb.Setting.ext));
                 if (mdb.Check(url)) {
-                    return ["0", mdb.decrypt(mdb.ImportFile(url, CHR))];
+                        try {
+                            var data = mdb.decrypt(mdb.ImportFile(url, CHR));
+                                var check = mdb.parse(data);
+                                    return ["0", data];
+                        } catch (e) {
+                                return handling.Error("e0xtm01", [mdb.Setting.signature]);
+                        }
                 } else {
                     return handling.Error("e0xje06", [TBL]);
                 }
@@ -50,7 +55,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
             PERM = (typeof PERM !== 'undefined') ? PERM : _default;
             CMD = (typeof CMD !== 'undefined') ? CMD : "null";
             var J_STRING = String(CMD).toLowerCase().match(tag.TAG);
-
+     
             switch (J_STRING[0].toLowerCase()) {
                 case "unique":
                     //UNIQUE lastupdate:05.06.2019
@@ -65,6 +70,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             }
                             return tmp.dbf;
                         }
+                        return handling.Error("e0xje02", ["UNIQUE"]);
                     } else {
                         return handling.Error("e0xje14", ["UNIQUE"]);
                     }
@@ -75,7 +81,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                         if (J_STRING.indexOf("value") > -1 && J_STRING.indexOf("find") > -1 && J_STRING.indexOf("column") > -1) {
                             const str = new output(mdb.BuildQuery(String(CMD), tag.UPDATE_ROW));
                             const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[1], conf.CharSet), null, mdb.parse(str.out[2]), mdb.parse(str.out[3]), mdb.parse(str.out[5]), null);
-                            var fileJQL = path.join(conf.Storage, DB, str.out[1] + mdb.Setting.ext);
+                            var fileJQL = path.join(conf.Storage, DB, mdb.StrToFileName(str.out[1], mdb.Setting.ext));
                             if (tmp.dbf[0] == 0) {
                                 MiraQuery.UPDATE_TABLE(fileJQL, mdb.parse(tmp.dbf[1]), tmp.col, tmp.val, tmp.str, function (data) {
                                     tmp.dbf = data;
@@ -83,6 +89,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             }
                             return tmp.dbf;
                         }
+                        return handling.Error("e0xje02", ["UPDATE"]);
                     } else {
                         return handling.Error("e0xje14", ["UPDATE"]);
                     }
@@ -104,6 +111,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             });
                             return tmp.dbf;
                         }
+                        return handling.Error("e0xje02", ["LIST"]);
                     } else {
                         return handling.Error("e0xje14", ["LIST"]);
                     }
@@ -128,6 +136,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             });
                             return tmp.dbf;
                         }
+                        return handling.Error("e0xje02", ["DROP"]);
                     } else {
                         return handling.Error("e0xje14", ["DROP"]);
                     }
@@ -156,6 +165,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             });
                             return tmp.dbf;
                         }
+                        return handling.Error("e0xje02", ["CREATE"]);
                     } else {
                         return handling.Error("e0xje14", ["CREATE"]);
                     }
@@ -165,7 +175,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                         //DELETE COLUMN  lastupdate:05.06.2019
                         if (J_STRING.indexOf("delete") > -1 && J_STRING.indexOf("column") > -1 && J_STRING.indexOf("table") > -1) {
                             const str = new output(mdb.BuildQuery(String(CMD), tag.DELETE_COLUMN));
-                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[2], conf.CharSet), null, mdb.parse(str.out[1]), null, null, path.join(conf.Storage, DB, str.out[2] + mdb.Setting.ext));
+                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[2], conf.CharSet), null, mdb.parse(str.out[1]), null, null, path.join(conf.Storage, DB, mdb.StrToFileName(str.out[2], mdb.Setting.ext)));
                             if (tmp.dbf[0] == 0) {
                                 MiraQuery.DELETE_COLUMN(tmp.dir, mdb.parse(tmp.dbf[1]), tmp.col, function (data) {
                                     tmp.dbf = data;
@@ -176,7 +186,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                         //DELETE ROW  lastupdate:05.06.2019
                         if (J_STRING.indexOf("delete") > -1 && J_STRING.indexOf("column") > -1 && J_STRING.indexOf("row") > -1) {
                             const str = new output(mdb.BuildQuery(String(CMD), tag.DELETE_ROW));
-                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[1], conf.CharSet), null, str.out[2], mdb.parse(str.out[4]), null, path.join(conf.Storage, DB, str.out[1] + mdb.Setting.ext));
+                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[1], conf.CharSet), null, str.out[2], mdb.parse(str.out[4]), null, path.join(conf.Storage, DB, mdb.StrToFileName(str.out[1], mdb.Setting.ext)));
                             if (tmp.dbf[0] == 0) {
                                 return MiraQuery.DELETE_ROW(tmp.dir, mdb.parse(tmp.dbf[1]), tmp.col, tmp.val);
                             }
@@ -184,11 +194,12 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                         //DELETE ROW INDEX lastupdate:05.06.2019
                         if (J_STRING.indexOf("delete") > -1 && J_STRING.indexOf("index") > -1 && J_STRING.indexOf("row") > -1) {
                             const str = new output(mdb.BuildQuery(String(CMD), tag.DELETE_INDEX));
-                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[1], conf.CharSet), null, null, str.out[2], str.out[1], path.join(conf.Storage, DB, str.out[1] + mdb.Setting.ext));
+                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[1], conf.CharSet), null, null, str.out[2], str.out[1], path.join(conf.Storage, DB, mdb.StrToFileName(str.out[1], mdb.Setting.ext)));
                             if (tmp.dbf[0] == 0) {
                                 return MiraQuery.DELETE_ROW_INDEX(tmp.dir, mdb.parse(tmp.dbf[1]), tmp.val, tmp.str);
                             }
                         }
+                        return handling.Error("e0xje02", ["DELETE"]);
                     } else {
                         return handling.Error("e0xje14", ["DELETE"]);
                     }
@@ -198,7 +209,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                         //RENAME COLUMN NAME lastupdate:05.06.2019
                         if (J_STRING.indexOf("rename") > -1 && J_STRING.indexOf("column") > -1 && J_STRING.indexOf("table") > -1 && J_STRING.indexOf("value") > -1) {
                             const str = new output(mdb.BuildQuery(String(CMD), tag.RENAME_COLUMN));
-                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[2], conf.CharSet), null, null, mdb.parse(str.out[1]), mdb.parse(str.out[4]), path.join(conf.Storage, DB, str.out[2] + mdb.Setting.ext));
+                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[2], conf.CharSet), null, null, mdb.parse(str.out[1]), mdb.parse(str.out[4]), path.join(conf.Storage, DB, mdb.StrToFileName(str.out[2], mdb.Setting.ext)));
                             if (tmp.dbf[0] == 0) {
                                 MiraQuery.RENAME_COLUMN(tmp.dir, mdb.parse(tmp.dbf[1]), tmp.val, tmp.str, function (data) {
                                     tmp.dbf = data;
@@ -232,6 +243,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             });
                             return tmp.dbf;
                         }
+                        return handling.Error("e0xje02", ["RENAME"]);
                     } else {
                         return handling.Error("e0xje14", ["RENAME"]);
                     }
@@ -241,7 +253,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                         //ADD ROW  lastupdate:05.06.2019
                         if (J_STRING.indexOf("add") > -1 && J_STRING.indexOf("column") > -1 && J_STRING.indexOf("row") > -1) {
                             const str = new output(mdb.BuildQuery(String(CMD), tag.ADD_ROW));
-                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[1], conf.CharSet), null, mdb.parse(str.out[2]), mdb.parse(str.out[4]), null, path.join(conf.Storage, DB, str.out[1] + mdb.Setting.ext));
+                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[1], conf.CharSet), null, mdb.parse(str.out[2]), mdb.parse(str.out[4]), null, path.join(conf.Storage, DB, mdb.StrToFileName(str.out[1], mdb.Setting.ext)));
                             if (tmp.dbf[0] == 0) {
                                 MiraQuery.ADD_ROW(tmp.dir, mdb.parse(tmp.dbf[1]), tmp.col, tmp.val, str.out[1], function (err, data) {
                                     if (err) {
@@ -256,7 +268,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                         //ADD COLUMN lastupdate:05.06.2019
                         if (J_STRING.indexOf("add") > -1 && J_STRING.indexOf("column") > -1 && J_STRING.indexOf("table") > -1) {
                             const str = new output(mdb.BuildQuery(String(CMD), tag.ADD_COLUMN));
-                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[2], conf.CharSet), null, mdb.parse(str.out[1]), null, null, path.join(conf.Storage, DB, str.out[2] + mdb.Setting.ext));
+                            const tmp = new datastring(OpenDB(conf.Storage, DB, str.out[2], conf.CharSet), null, mdb.parse(str.out[1]), null, null, path.join(conf.Storage, DB, mdb.StrToFileName(str.out[2], mdb.Setting.ext)));
                             if (tmp.dbf[0] == 0) {
                                 MiraQuery.ADD_COLUMN(tmp.dir, mdb.parse(tmp.dbf[1]), tmp.col, function (result) {
                                     tmp.dbf = result;
@@ -264,6 +276,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             }
                             return tmp.dbf;
                         }
+                        return handling.Error("e0xje02", ["ADD"]);
                     } else {
                         return handling.Error("e0xje14", ["ADD"]);
                     }
@@ -320,6 +333,8 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             const tmp = new datastring(OpenDB(conf.Storage, DB, str.out, conf.CharSet), null, null, null, null, null);
                             if (tmp.dbf[0] == 0) {
                                 tmp.dbf = mdb.parse(tmp.dbf[1]);
+                            } else if (typeof tmp.dbf[0] == "undefined") {
+                                return tmp.dbf["text"];
                             }
                             return [tmp.dbf.length];
                         }
@@ -334,7 +349,7 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
                             }
                             return tmp.dbf;
                         }
-
+                        return handling.Error("e0xje02", ["SELECT"]);
                     } else {
                         return handling.Error("e0xje14", ["SELECT"]);
                     }
@@ -346,11 +361,17 @@ module.exports = function (_Storage, _Database, _Permission, _CharSet) {
             return handling.Error("e0xje01", [e.message]);
         }
     }
+    
+    this.Token = function (params) {
+       return require('./system/TK24')(params)
+    };
+    
     this.Query = function (CMD, callback) {
         if (callback) {
             callback(Query(CMD, conf.DB, conf.Permission));
         } else {
             return Query(CMD, conf.DB, conf.Permission);
         }
-    };
+    }  
+
 };

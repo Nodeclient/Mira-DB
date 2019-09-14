@@ -3,7 +3,7 @@
     https://www.npmjs.com/package/mira-db
 */
 
-let DB_LANG = (typeof process.env.LANG === "undefined" || process.env.LANG === "") ? "en_us" : String(process.env.LANG).toLowerCase();
+let DB_LANG = (typeof process.env.SET_LANG === "undefined" || process.env.SET_LANG === "") ? "en_us" : String(process.env.SET_LANG).toLowerCase();
 
 module.exports = {
         Error: function (CODE, ARR) {
@@ -38,7 +38,7 @@ function SET_STRING_TAG(string, arr) {
     if (Array.isArray(arr)) {
       for (var i in match) {
         var str = (typeof arr[i] == "undefined") ? null : arr[i];
-        input = input.slice(0, input.indexOf("%s")) + input.slice(input.indexOf("%s"), input.length).replace("%s", str) + input.slice(input.length);
+            input = input.slice(0, input.indexOf("%s")) + input.slice(input.indexOf("%s"), input.length).replace("%s", str) + input.slice(input.length);
       }
       return {
         "resume": true,

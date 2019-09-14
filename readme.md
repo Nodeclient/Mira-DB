@@ -59,8 +59,8 @@ MiraDB is open source javascript object oriented database management system that
     });            
 ```  
 
-### last published (new)
-* [Mira-DB-dev-1.0.39][df200]
+### available test version (not stable)
+* [Mira-DB-dev-1.0.40][df200]
 
 ## Connector | open-source (zip archive)
 * [CONNECTORS][df1]
@@ -94,7 +94,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
    [df142]: <https://github.com/Nodeclient/Mira-DB/blob/master/language/readme.md>
    [df141]: <https://github.com/Nodeclient/Mira-DB/blob/master/language/sample.json>
-   [df200]: <https://git.io/JemsI>
+   [df200]: <https://github.com/Nodeclient/Mira-DB/tree/master/sources/mira-dev-1.0.40>
    [df2]: <https://git.io/fpQur>
    [df1]: <https://git.io/fpQua>
    [df15]: <https://git.io/fpabN>
