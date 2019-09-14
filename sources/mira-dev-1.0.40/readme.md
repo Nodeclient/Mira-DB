@@ -1,4 +1,4 @@
-## Sample (LocalDB.js)
+## Sample 1.0.40 (test)
 
 ```js
         /* MIRA-DB GLOBAL SETTINGS (NEW) 0.40 */
