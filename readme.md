@@ -27,7 +27,7 @@ MiraDB is open source javascript object oriented database management system that
 
  > Cross application supporting , a lot of samples and easy connected with (Rest Api).
  
- > You can manually set the query restrict and Each user has access to nine (boolean) types of permission for a table.
+ > You can manually set the query restrict and each user has access to nine (boolean) types of permission for a table.
  
 ----
 
