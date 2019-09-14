@@ -16,6 +16,7 @@ MiraDB is open source javascript object oriented database management system that
 * [MIRADB BINARY][df15]
 * [SIMPLE WEB ADMIN][df14] 
 
+
 ----
 ### What makes mira-db different?
  > Mira-db is a non-relational database
@@ -28,6 +29,7 @@ MiraDB is open source javascript object oriented database management system that
  
  > You can manually set the query restrict and Each user has access to nine (boolean) types of permission for a table.
 ----
+
 
 ## Example usage (Local Database)
 
