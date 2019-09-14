@@ -14,28 +14,3 @@
         var My_new_db_token = new_database.Token();
 console.log(My_new_db_token);
 ```  
-
-```js
-        // IMPORT MODULE
-        const mira = require("mira-db");
-        // SET YOUR APP PERMISSION
-        var Perms = { 
-            UNIQUE:true,
-            SELECT:true,
-            ADD:true,
-            UPDATE:true,
-            RENAME:true,
-            DROP:true,
-            DELETE:true,
-            CREATE:true,
-            LIST:true 
-        }
-        // DATABASE STORAGE FOLDER
-        var Storage = __dirname + "/data";
-        // DATABASE NAME
-        var DB = "test";
-        // CREATE NEW MIRA-DB OBJECT
-        var new_database = new mira(Storage,DB,Perms,"UTF-8");
-        //SET QUERY
-        var query = 'SELECT TABLE person'
-```
