@@ -1,4 +1,4 @@
-## Sample 1.0.40 (test)
+## Sample 1.0.40 (In testing)
 
 ```js
         /* MIRA-DB GLOBAL SETTINGS (NEW) 0.40 */
