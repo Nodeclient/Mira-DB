@@ -2,7 +2,7 @@
 
 ```js
         /* MIRA-DB GLOBAL SETTINGS (NEW) 0.40 */
-        process.env.SET_LANG="en_us";                    //Select current language
+        process.env.SET_LANG="en_us";                    //Select language
         process.env.MIRA_DB_TOKEN="E4WXqn_IotaTPN6E";   //Database encryption security token
         process.env.SET_FILE_HEADER="JQL1";            //Database file header
         process.env.SET_FILE_EXTENSION="jsq";         //Database file extension (Do not use dot)
