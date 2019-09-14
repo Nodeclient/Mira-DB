@@ -73,7 +73,7 @@ MiraDB is open source javascript object oriented database management system that
 
 ## License MIT
 
-Copyright (c) 2018 Levent Inan, https://github.com/Nodeclient/
+Copyright (c) 2018 , https://github.com/Nodeclient/
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
