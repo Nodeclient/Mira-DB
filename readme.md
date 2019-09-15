@@ -22,7 +22,7 @@ MiraDB is open source javascript object oriented database management system
 ### What makes mira-db different?
  > Mira-db is a non-relational database
 
- > Stores data as a binary encrypted file (JSON)  
+ > Stored, each database is actually a reserved folder and each folder names same your database name. And each database table are a binary encrypted JSON files.
  
  > Mira query's is a contain terms matching regular expressions but very similar to mysql and of course very simple for developers to learn and use.
 
