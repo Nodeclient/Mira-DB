@@ -10,7 +10,6 @@
 
 ```js
         /* MIRA-DB GENERATE A NEW TOKEN 0.40 */
-        var new_database = new mira(Storage,DB,Perms,"UTF-8");
         var My_new_db_token = new_database.Token();
-console.log(My_new_db_token);
+            console.log(My_new_db_token);
 ```  
