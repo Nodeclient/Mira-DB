@@ -24,11 +24,11 @@ MiraDB is open source javascript object oriented database management system
 
  > Stored, each database is actually a reserved folder and each folder names same your database name. And each database table are a binary encrypted JSON files.
  
+ > You can manually set restricts and each user has access to nine (boolean) types of permission for a table.
+ 
  > Mira query's is a contain terms matching regular expressions but very similar to mysql and of course very simple for developers to learn and use.
 
  > Supported cross-application, a lot of samples and easy remote management with (Rest Api).
- 
- > You can manually set restricts and each user has access to nine (boolean) types of permission for a table.
  
 ----
 
