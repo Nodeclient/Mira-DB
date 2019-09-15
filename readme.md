@@ -26,7 +26,7 @@ MiraDB is open source javascript object oriented database management system
  
  > Mira query's is a contain terms matching regular expressions but very similar to mysql and of course very simple for developers to learn and use.
 
- > Cross application supporting , a lot of samples and easy connected with (Rest Api).
+ > Supported cross-application, a lot of samples and easy remote management with (Rest Api).
  
  > You can manually set restricts and each user has access to nine (boolean) types of permission for a table.
  
