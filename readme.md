@@ -8,7 +8,6 @@
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 MiraDB is open source javascript object oriented database management system 
-> the mira-query
 
 ## Help documentation
 * [DOCUMENTS][df9]
