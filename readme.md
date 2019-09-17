@@ -1,4 +1,4 @@
-# Mira-DB (OOJSDB)
+# MIRA-DB (OOJSDB)
 
 [![NPM version][npm-image]][npm-url]
 ![npm](https://img.shields.io/npm/dt/mira-db)
@@ -33,50 +33,77 @@ MiraDB is open source javascript object oriented database management system
  
 ----
 
+## Mira-query list
+```bash
+    UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;
+    SELECT TABLE <TABLE_NAME>; 
+    SELECT TABLE <TABLE_NAME> COUNT; 
+    SELECT TABLE <TABLE_NAME> COLUMN ["COL1"];
+    SELECT TABLE <TABLE_NAME> LIMIT ["1","5"];
+    SELECT TABLE <TABLE_NAME> COLUMN ["COL1"] FIND ["SEARCH_STRING"];
+    SELECT TABLE <TABLE_NAME> COLUMN ["COL1"] FIND ["SEARCH_STRING"] LIKE; 
+    UPDATE ROW <TABLE_NAME> COLUMN ["COL1","COL2",..] VALUE ["VAL1","VAL2"] FIND ["COL1","SEARCH_STRING"];
+    ADD ROW <TABLE_NAME> COLUMN ["COL1","COL2","COL3"] VALUE ["VAL1","VAL2","VAL3"]; 
+    ADD COLUMN ["COL1","COL2","COL3"] TABLE <TABLE_NAME>; 
+    RENAME TABLE ["TABLE"] VALUE ["NEW_NAME"]; 
+    RENAME DATABASE ["DATABASE_NAME"] VALUE ["NEW_NAME"]; 
+    RENAME COLUMN ["COL1","COL2",..] TABLE <TABLE_NAME> VALUE ["NEW_1","NEW_2"]; 
+    DELETE COLUMN ["COL1","COL2",..] TABLE <TABLE_NAME>; 
+    DELETE ROW <TABLE_NAME> COLUMN <COLUMN_NAME> VALUE ["STRING"];
+    DELETE ROW <TABLE_NAME> INDEX <INDEX_NUMBER>;
+    CREATE TABLE <TABLE_NAME> COLUMN ["COL1","COL2","COL3"] VALUE ["VAL1","VAL2","VAL3"];
+    CREATE DATABASE <DATABASE_NAME>;
+    DROP DATABASE <DATABASE_NAME>;
+    DROP TABLE <TABLE_NAME>;
+    LIST DATABASE;
+    LIST TABLE <DATABASE_NAME>;
+```
 
-## Example usage (Local Database)
+## Sample : "local-database.js"
 
- ```js
-     /* MIRA-DB GLOBAL SETTINGS (NEW) 0.39 */
-        process.env.SET_LANG="en_us"; 
-     // 1.0.40 -> process.env.MIRA_DB_TOKEN="E4WXqn_IotaTPN6E";   
-     // 1.0.40 -> process.env.SET_FILE_HEADER="JQL1";          
-     // 1.0.40 -> process.env.SET_FILE_EXTENSION="jsq";  
+```js
+    /* MIRA-DB GLOBAL SETTINGS (NEW) */
+    process.env.SET_LANG="en_us";                    //Language setting
+    process.env.MIRA_DB_TOKEN="E4WXqn_IotaTPN6E";   //Database encryption token
+    process.env.SET_FILE_HEADER="JQL1";            //File header
+    process.env.SET_FILE_EXTENSION="jsq";         //File extension (Do not use the dot)
     
-    // IMPORT MODULE
+    /* IMPORT MODULE */
     const mira = require("mira-db");
-    // SET YOUR APP PERMISSION
+    
+    /* PERMISSION */
     var Perms = { 
-        UNIQUE:true,
-        SELECT:true,
-        ADD:true,
-        UPDATE:true,
-        RENAME:true,
-        DROP:true,
-        DELETE:true,
-        CREATE:true,
-        LIST:true 
-    }
-    // DATABASE STORAGE FOLDER
+      SELECT:true,
+      ADD:true,
+      UNIQUE:true,
+      UPDATE:true,
+      RENAME:true,
+      DROP:true,
+      DELETE:true,
+      CREATE:true,
+      LIST:true }
+      
+    /* STORAGE FOLDER */
     var Storage = __dirname + "/data";
-    // DATABASE NAME
+    /* DATABASE NAME */
     var DB = "test";
-    // CREATE NEW MIRA-DB OBJECT
+    /* CREATE A NEW MIRA OBJECT */
     var new_database = new mira(Storage,DB,Perms,"UTF-8");
-    //SET QUERY
+    /* MIRA-QUERY */
     var query = 'SELECT TABLE person'
 ```
-```js    
-    // RESULT (RETURN EXAMPLE)
+
+```js   
+    /* SAMPLE (RETURN) */
     var result = new_database.Query(query);  
     console.log(  result );
-```  
-```js    
-    // RESULT (CALLBACK EXAMPLE)
+```
+```js     
+    /* SAMPLE (CALLBACK) */
     new_database.Query(query ,function(result){
       console.log(  result );
-    });            
-```  
+    });           
+```
 
 ## Version 1.0.40 is now ready for test (not stable)
 * [Mira-DB-dev-1.0.40][df200]
