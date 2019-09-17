@@ -65,10 +65,22 @@ MiraDB is open source javascript object oriented database management system
     process.env.MIRA_DB_TOKEN="E4WXqn_IotaTPN6E";   //Database encryption security token
     process.env.SET_FILE_HEADER="JQL1";            //Database file header
     process.env.SET_FILE_EXTENSION="jsq";         //Database file extension (Do not use the dot)
+    
     /* IMPORT MODULE */
     const mira = require("mira-db");
+    
     /* PERMISSION */
-    var Perms = { SELECT:true,ADD:true,UNIQUE:true,UPDATE:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true }
+    var Perms = { 
+      SELECT:true,
+      ADD:true,
+      UNIQUE:true,
+      UPDATE:true,
+      RENAME:true,
+      DROP:true,
+      DELETE:true,
+      CREATE:true,
+      LIST:true }
+      
     /* STORAGE FOLDER */
     var Storage = __dirname + "/data";
     /* DATABASE NAME */
@@ -78,6 +90,7 @@ MiraDB is open source javascript object oriented database management system
     /* MIRA-QUERY */
     var query = 'SELECT TABLE person'
 ```
+
 ```js   
     /* SAMPLE (RETURN) */
     var result = new_database.Query(query);  
