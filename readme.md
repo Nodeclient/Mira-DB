@@ -34,6 +34,7 @@ MiraDB is open source javascript object oriented database management system
 ----
 
 ## Mira-query list
+```bash
     UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;
     SELECT TABLE <TABLE_NAME>; 
     SELECT TABLE <TABLE_NAME> COUNT; 
@@ -56,7 +57,7 @@ MiraDB is open source javascript object oriented database management system
     DROP TABLE <TABLE_NAME>;
     LIST DATABASE;
     LIST TABLE <DATABASE_NAME>;
-------
+```
 
 ## Sample : "local-database.js"
 
