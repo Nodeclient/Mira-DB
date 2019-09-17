@@ -1,4 +1,4 @@
-# Mira-DB (OOJSDB)
+# MIRA-DB (OOJSDB)
 
 [![NPM version][npm-image]][npm-url]
 ![npm](https://img.shields.io/npm/dt/mira-db)
@@ -33,7 +33,7 @@ MiraDB is open source javascript object oriented database management system
  
 ----
 
-## Mira Regular Expression Querys
+## Mira-query list
 
  > UNIQUE COLUMN <COLUMN_NAME> TABLE <TABLE_NAME>;
  
@@ -80,7 +80,7 @@ MiraDB is open source javascript object oriented database management system
  > LIST TABLE <DATABASE_NAME>;
  
         
-## Example usage (Local Database)
+## Sample (Local_db.js)
 
 ```js
     /* MIRA-DB GLOBAL SETTINGS (NEW) */
