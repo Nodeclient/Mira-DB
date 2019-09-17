@@ -29,7 +29,7 @@ MiraDB is open source javascript object oriented database management system
 
  > Mira-db is supporting cross-application. (don't worry you can reach many samples on the github page about this)
  
- > You can easy management your own databases with web interface. (Simple Admin 1.0.2)
+ > You can easy management your own databases with web interface. (Simple Admin 1.0)
  
 ----
 
