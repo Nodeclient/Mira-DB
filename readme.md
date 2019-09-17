@@ -76,7 +76,7 @@ MiraDB is open source javascript object oriented database management system
     });            
 ```  
 
-## Next source available below (not stable)
+## Version 1.0.40 is now ready for test (not stable)
 * [Mira-DB-dev-1.0.40][df200]
 
 ## Connector | open-source (zip archive)
