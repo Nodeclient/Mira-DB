@@ -2,9 +2,8 @@
     Mira-db 
     https://www.npmjs.com/package/mira-db
 */
-
 let DB_LANG = (typeof process.env.SET_LANG === "undefined" || process.env.SET_LANG === "") ? "en_us" : String(process.env.SET_LANG).toLowerCase();
-
+//17.09.2019 
 module.exports = {
         Error: function (CODE, ARR) {
             try {
@@ -31,7 +30,7 @@ module.exports = {
             }
         }
 };
-
+//17.09.2019 
 function SET_STRING_TAG(string, arr) {
     var match = String(string).match(/%s/gi);
     var input = String(string);
