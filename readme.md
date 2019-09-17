@@ -79,8 +79,9 @@ MiraDB is open source javascript object oriented database management system
  
  > LIST TABLE <DATABASE_NAME>;
  
-        
-## Sample (Local_db.js)
+------
+
+## Sample : "local-database.js"
 
 ```js
     /* MIRA-DB GLOBAL SETTINGS (NEW) */
