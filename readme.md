@@ -59,47 +59,36 @@ MiraDB is open source javascript object oriented database management system
         
 ## Example usage (Local Database)
 
- ```js
-     /* MIRA-DB GLOBAL SETTINGS (NEW) 0.39 */
-        process.env.SET_LANG="en_us"; 
-     // 1.0.40 -> process.env.MIRA_DB_TOKEN="E4WXqn_IotaTPN6E";   
-     // 1.0.40 -> process.env.SET_FILE_HEADER="JQL1";          
-     // 1.0.40 -> process.env.SET_FILE_EXTENSION="jsq";  
-    
-    // IMPORT MODULE
+```js
+    /* MIRA-DB GLOBAL SETTINGS (NEW) 0.39 */
+    process.env.SET_LANG="en_us";                    //Select current language
+    process.env.MIRA_DB_TOKEN="E4WXqn_IotaTPN6E";   //Database encryption security token
+    process.env.SET_FILE_HEADER="JQL1";            //Database file header
+    process.env.SET_FILE_EXTENSION="jsq";         //Database file extension (Do not use the dot)
+    /* IMPORT MODULE */
     const mira = require("mira-db");
-    // SET YOUR APP PERMISSION
-    var Perms = { 
-        UNIQUE:true,
-        SELECT:true,
-        ADD:true,
-        UPDATE:true,
-        RENAME:true,
-        DROP:true,
-        DELETE:true,
-        CREATE:true,
-        LIST:true 
-    }
-    // DATABASE STORAGE FOLDER
+    /* PERMISSION */
+    var Perms = { SELECT:true,ADD:true,UNIQUE:true,UPDATE:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true }
+    /* STORAGE FOLDER */
     var Storage = __dirname + "/data";
-    // DATABASE NAME
+    /* DATABASE NAME */
     var DB = "test";
-    // CREATE NEW MIRA-DB OBJECT
+    /* CREATE A NEW MIRA OBJECT */
     var new_database = new mira(Storage,DB,Perms,"UTF-8");
-    //SET QUERY
+    /* MIRA-QUERY */
     var query = 'SELECT TABLE person'
 ```
-```js    
-    // RESULT (RETURN EXAMPLE)
+```js   
+    /* SAMPLE (RETURN) */
     var result = new_database.Query(query);  
     console.log(  result );
-```  
-```js    
-    // RESULT (CALLBACK EXAMPLE)
+```
+```js     
+    /* SAMPLE (CALLBACK) */
     new_database.Query(query ,function(result){
       console.log(  result );
-    });            
-```  
+    });           
+```
 
 ## Version 1.0.40 is now ready for test (not stable)
 * [Mira-DB-dev-1.0.40][df200]
