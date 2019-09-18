@@ -63,10 +63,12 @@ MiraDB is open source javascript object oriented database management system
 
 ```js
     /* MIRA-DB GLOBAL SETTINGS (NEW) */
-    process.env.SET_LANG="en_us";                    //Language setting
-    process.env.MIRA_DB_TOKEN="E4WXqn_IotaTPN6E";   //Database encryption token
-    process.env.SET_FILE_HEADER="JQL1";            //File header
-    process.env.SET_FILE_EXTENSION="jsq";         //File extension (Do not use the dot)
+     process.env.SET_LANG="en_us"; //Language setting
+
+    /* important! if you change that values , you can't reading or writing data from by default (mira-db) database's */
+     process.env.MIRA_DB_TOKEN="E4WXqn_IotaTPN6E"; //Database encryption token
+     process.env.SET_FILE_HEADER="JQL1"; //File header
+     process.env.SET_FILE_EXTENSION="jsq"; //File extension (Do not use the dot)
     
     /* IMPORT MODULE */
     const mira = require("mira-db");
