@@ -22,7 +22,7 @@ module.exports = {
                                     }
                                 return SET_RESULT;
                             } else {
-                                return { "resume": false,"code": "MIRA-0", "text": "SET_ERROR: FAILED ARRAY" };
+                                return { "resume": false,"code": "MIRA-0", "text": "UNKNOW FORMAT" };
                             }
                         }
             } catch (err) {
