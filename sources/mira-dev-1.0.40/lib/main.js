@@ -3,6 +3,8 @@
     https://www.npmjs.com/package/mira-db
 */
 const tag = require("./query/register");
+const reference = require("./query/reference");
+
 const mdb = require('./system');
 const {
     miraconfig,
@@ -12,7 +14,6 @@ const {
 const handling = require('./error');
 const path = require('path');
 const MiraQuery = require('./query');
-const reference = require("./query/reference");
 
 module.exports = function (_Storage, _Database, _Permission, _CharSet) {
     var _default = {
