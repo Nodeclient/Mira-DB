@@ -1,0 +1,11 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "mira-db": {
+      "version": "1.0.40",
+      "resolved": "https://registry.npmjs.org/mira-db/-/mira-db-1.0.40.tgz",
+      "integrity": "sha512-H+MNRaeKTWTcsCa7NqU7z0xD2rG7K2ewLtrEynRXnZ9gpKaIbp+VDoBeUdi/ddmXLQvfPTAml2LAZoDr1QcTtA=="
+    }
+  }
+}

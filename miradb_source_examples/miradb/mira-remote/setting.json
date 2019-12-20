@@ -1,0 +1,6 @@
+{
+	"DB_LOC":"e:/Node-Js/crex24/V2_NEW/data",
+	"PORT":8123,
+	"MAX_MEMORY":"100MB",
+	"WEB_FOLDER":"public"
+}
