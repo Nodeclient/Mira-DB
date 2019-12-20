@@ -24,7 +24,7 @@
         --------------------------------------------------------------------------------------------------------------
     */
 
-        /* MIRA-DB GLOBAL SETTINGS (NEW) 0.39 */
+        /* MIRA-DB GLOBAL SETTINGS (NEW) 0.40 */
             process.env.SET_LANG="en_us";                    //Select current language
             process.env.MIRA_DB_TOKEN="E4WXqn_IotaTPN6E";   //Database encryption security token
             process.env.SET_FILE_HEADER="JQL1";            //Database file header
@@ -33,13 +33,13 @@
         /* IMPORT MODULES */
             const mira = require("mira-db");
 
-        /* CREAT A NEW MIRA-DB OBJECT 0.39 */
+        /* CREAT A NEW MIRA-DB OBJECT 0.40 */
             var Perms = { SELECT:true,ADD:true,UNIQUE:true,UPDATE:true,RENAME:true,DROP:true,DELETE:true,CREATE:true,LIST:true };
             var Storage = "./data";
-            var new_database = new mira(Storage,"login",Perms,"UTF-8");
+            var new_database = new mira(Storage,"test_db",Perms,"UTF-8");
 
         /* MIRA-DB QUERY 0.39 */
-            var query = 'SELECT TABLE yourtablename';
+            var query = 'SELECT TABLE persons';
             var result = new_database.Query(query);    
 
 
