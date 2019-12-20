@@ -4,7 +4,9 @@
 ### Remote-DB Install
     $ 'cd ./mira-remote'
     $ 'npm install'
+    $ 'npm run mira_local_database.js'
 
 ### Local-DB Install
     $ 'cd ./mira-local'
-    $ 'npm install'
+    $ 'npm install'    
+    $ 'npm run mira_db_express.js'
