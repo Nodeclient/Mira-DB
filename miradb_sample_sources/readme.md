@@ -4,12 +4,12 @@
 ### Remote-DB Install
     $ 'cd ./mira-remote'
     $ 'npm install'
-    $ 'npm run mira_local_database.js'
+    $ 'npm run mira_db_express.js'
 
 ### Local-DB Install
     $ 'cd ./mira-local'
     $ 'npm install'    
-    $ 'npm run mira_db_express.js'
+    $ 'npm run mira_local_database.js'
     
 ### Creat A New Database (sample querys)
    1) CREATE DATABASE first_db;
