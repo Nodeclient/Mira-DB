@@ -10,7 +10,9 @@
     $ 'cd ./mira-local'
     $ 'npm install'    
     $ 'npm run mira_local_database.js'
-       Simple DB-Admin -> http:127.0.0.1:8123/
+    
+    Simple DB-Admin (Open your Web browser)
+    http:127.0.0.1:8123/
     
 ### Creat A New Database (sample querys)
    1) CREATE DATABASE first_db;
