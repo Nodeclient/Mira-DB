@@ -5,7 +5,6 @@
 [![Slack Status](https://img.shields.io/badge/slack-Nodeclient-blue.svg?longCache=true&style=flat)](https://join.slack.com/t/nodeclient/shared_invite/enQtNDg5NzE0MjQyNTMyLTE3ZTdkMDQ0ODEzZThmNDQ3NjhhZGMwZWQ4MDI0YTI2MDEwOTQ3YjVjZmUyY2FmZTlhN2IwMDYwNmI4YjhjNzk)
 [![Known Vulnerabilities](https://snyk.io/test/npm/mira-db/badge.svg)](https://snyk.io/test/npm/mira-db)
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
-[![Package Quality](https://npm.packagequality.com/shield/mira-db.svg)](https://packagequality.com/#?package=mira-db)
 
 MiraDB is open source javascript object oriented database management system 
 
