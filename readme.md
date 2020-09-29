@@ -12,10 +12,10 @@ MiraDB is open source javascript object oriented database
 
 ## Releases & download
 * [MIRADB BINARY][df15]
-* [SIMPLE WEB ADMIN][df14] 
+* [SIMPLE WEB ADMIN DOC][df14] 
 
 Update your web-admin - v1.0.2!
-https://github.com/Nodeclient/Mira-DB/releases/download/webadmin/public_web_admin_102.tar.gz
+[DOWNLOAD][df13]
 
 ----
 ### What makes mira-db different?
@@ -143,6 +143,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
    [df2]: <https://git.io/fpQur>
    [df1]: <https://git.io/fpQua>
    [df15]: <https://git.io/fpabN>
+   [df13]: <https://github.com/Nodeclient/Mira-DB/releases/download/webadmin/public_web_admin_102.tar.gz>
    [df14]: <https://nodeclient.github.io/helpdocs/#simple-admin-section>
    [df9]: <https://nodeclient.github.io/helpdocs/>
 
