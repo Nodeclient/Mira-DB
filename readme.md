@@ -14,6 +14,8 @@ MiraDB is open source javascript object oriented database
 * [MIRADB BINARY][df15]
 * [SIMPLE WEB ADMIN][df14] 
 
+Update your web-admin - v1.0.2!
+https://github.com/Nodeclient/Mira-DB/releases/download/webadmin/public_web_admin_102.tar.gz
 
 ----
 ### What makes mira-db different?
