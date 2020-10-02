@@ -6,6 +6,8 @@
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 MiraDB is open source javascript object oriented database
+## INSTALL (NPM)
+``npm i mira-db``
 
 ## Help documentation
 * [DOCUMENTS][df9]
