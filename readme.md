@@ -1,4 +1,4 @@
-# MIRA-DB (OOJSDB)
+# MIRA-DB (JSDB)
 [![NPM version][npm-image]][npm-url]
 ![npm](https://img.shields.io/npm/dt/mira-db)
 [![Try mira-db on RunKit](https://badge.runkitcdn.com/mira-db.svg)](https://npm.runkit.com/mira-db)
