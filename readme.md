@@ -20,7 +20,7 @@ MiraDB is open source javascript object oriented database
 [DOWNLOAD][df13]
 
 ----
-### What makes mira-db different?
+### --
  > Mira-db is a non-relational database
  
  > Stored, table are a binary encrypted JSON files.
