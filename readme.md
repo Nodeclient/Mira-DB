@@ -1,4 +1,11 @@
-# MIRA-DB (JSDB)
+
+## NEWS
+
+### **Mira-db v2 almost ready** 
+ > Mira-db npm package is scheduled to be completed in 2021 december also
+ > major changes are coming like new data structures , scalable database type and more.
+
+## MIRA-DB
 [![NPM version][npm-image]][npm-url]
 ![npm](https://img.shields.io/npm/dt/mira-db)
 [![Try mira-db on RunKit](https://badge.runkitcdn.com/mira-db.svg)](https://npm.runkit.com/mira-db)
@@ -18,6 +25,7 @@ MiraDB is open source javascript object oriented database
 
  **Update your web-admin** - v1.0.2!
 [DOWNLOAD][df13]
+
 
 ----
 ### --
