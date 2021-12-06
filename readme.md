@@ -1,9 +1,10 @@
 
-## NEWS
+# MIRA-DB ``v2.0`` ready for public test 
 
-### **Mira-db v2 almost ready** 
- > Mira-db npm package is scheduled to be completed in 2021 december also
- > major changes are coming like new data structures , scalable database type and more.
+### ``https://github.com/Nodeclient/mira-db2``
+---
+
+
 
 ## MIRA-DB
 [![NPM version][npm-image]][npm-url]
